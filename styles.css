@@ -13,7 +13,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-
+    
 }
 
 footer{
@@ -32,9 +32,16 @@ footer{
     text-align: center;
 }
 
-/*Style pour la page Personnalisation*/
+.models{
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-row: auto auto;
+    text-align: center;
+    
+}
+/*Style pour la page Personnalisation uniquement*/
 
-/*Style pour la page Contenu de la commande*/
+/*Style pour la page Contenu de la commande uniquement*/
 
 .grille{
     display: grid;
@@ -48,4 +55,4 @@ form{
 
 }
 
-/*Style pour la page A propos Contact*/
+/*Style pour la page A propos Contact uniquement*/
