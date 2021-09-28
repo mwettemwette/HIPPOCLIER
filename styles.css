@@ -1,10 +1,24 @@
+body{
+    background-color: darkslategrey;
+}
+
 header{
     font-size: xx-large;
     text-align: center;
-    font-family: ;
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
 }
 
 #choix{
+    text-align: center;
+}
+
+
+.grillemarques{
+    display: flex;
     text-align: center;
 }
 
@@ -12,4 +26,10 @@ header{
     display: grid;
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 50vh 50vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
 }

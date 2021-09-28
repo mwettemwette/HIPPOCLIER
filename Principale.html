@@ -3,6 +3,7 @@
     <head>
         <title>HIPPOCLIER</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
 
@@ -12,26 +13,34 @@
             HIPPOCLIER
 
         </header>
+
         <section>
-            <h1>Choisissez la marque de votre téléphone</h1>
-            <img src="imagemarque1.jpg" alt="marque1"
-            usemap="#marque1" width="" height="">
-            <img src="imagemarque2.jpg" alt="marque2"
-            usemap="#marque2" width="" height="">
-            <img src="imagemarque3.jpg" alt="marque3"
-            usemap="#marque3" width="" height="">
+            <h1 id="choix">Choisissez la marque de votre téléphone</h1>
+            <div class="grillemarques">
+            <img src="/images/Apple.jpg" alt="Apple"
+            usemap="#Apple" width="100%" height="auto">
+            <img src="/images/Huawei.jpg" alt="Huawei"
+            usemap="#Huawei" width="100%" height="auto">
+            <img src="/images/Samsung.jpg" alt="Samsung"
+            usemap="#Samsung" width="100%" height="auto">
             <!--les images peuvent être regroupées en une seule
             où on créera des area shape pour pouvoir ensuite
             avoir accès aux modèles des marques-->
-            <map name="marque1">
-                <area shape="default" alt="marque1" href="marque1.htm">
+            <map name="Apple">
+                <area shape="default" alt="Apple" href="#Apple">
 
             </map>
-            <map name="marque2">
-                <area shape="default" alt="marque2" href="marque2.htm"
+
+            <map name="Huawei">
+                <area shape="default" alt="Huawei" href="#Huawei">
             </map>
             
-        <!--Menu avec les produits-->
+            <map name="Samsung">
+                <area shape="default" alt="Samsung" href="#Samsung">
+            </map>
+
+            </div>
+        <!--Menu avec les produits-->S
         <!--mdr-->
 
         </section>
