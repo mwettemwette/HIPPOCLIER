@@ -1,3 +1,5 @@
+/*Style pour toutes les pages*/
+
 body{
     background-color: darkslategrey;
 }
@@ -7,20 +9,32 @@ header{
     text-align: center;
 }
 
+#logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
 footer{
     position: relative;
     bottom: 0px;
 }
 
+/*Style pour la page Principale uniquement*/
+
 #choix{
     text-align: center;
 }
-
 
 .grillemarques{
     display: flex;
     text-align: center;
 }
+
+/*Style pour la page Personnalisation*/
+
+/*Style pour la page Contenu de la commande*/
 
 .grille{
     display: grid;
@@ -33,3 +47,5 @@ form{
     flex-direction: column;
 
 }
+
+/*Style pour la page A propos Contact*/
