@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html lang="fr">
+
+        <head>
+            <title>HIPPOCLIER</title>
+            <meta charset="UTF-8">
+        </head>
+
+        <body>
+            
+            <section>
+                <!--récap du panier avec les images-->
+                <h1>Votre panier</h1>
+
+
+            </section>
+            
+
+            <section>
+                <!--récap du panier-->
+                <h1>Détail panier</h1>
+
+            </section>
+            
+
+            <section>
+                <!--info livraison-->
+                <h1>Informations livraison</h1>
+
+                <form action="/commande.php">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom"><br><br>
+
+                    <label for="nom">NOM :</label>
+                    <input type="text" id="nom" name="nom"><br><br>
+
+                    <label for="mail">Adresse mail :</label>
+                    <input type="text" id="mail" name="mail"><br><br>
+
+                    <label for="tel">Numéro de téléphone :</label>
+                    <input type="text" maxlength="10" id="tel" name="tel"><br><br>
+                    
+                    <label for="adresse">Adresse (n°, rue) :</label>
+                    <input type="email" id="adresse" name="adresse"><br><br>
+
+                    <label for="cp">Code Postal :</label>
+                    <input type="text" maxlength="5" id="cp" name="cp"><br><br>
+
+                    <label for="ville">Ville :</label>
+                    <input type="text" id="ville" name="ville"><br><br>
+
+                    <label for="comp">Informations complémentaires :</label>
+                    <input type="text" id="comp" name="comp"><br><br>
+
+                    <input type="submit" value="Valider">
+
+                    <input type="reset" value="Effacer">
+                </form>
+                <!--date de livraison + calcul prix si express (72h) ou pas-->
+                
+            </section>
+
+
+            <section>
+                <!--prix total-->
+                <h1>Récapitulatif de la commande</h1>
+                <p>Panier :</p>
+                <p>Livraison :</p>
+                <p>Total :</p>
+                
+                <button type="button" onclick="alert('Merci pour votre commande !')">Payer</button>
+                <br> <a href="https://bit.ly/2VYkGPX">Régler votre commande</a>
+            </section>
+
+        </body>
+
+
+
+
+    </html>
