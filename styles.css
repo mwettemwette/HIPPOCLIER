@@ -49,3 +49,37 @@ form{
 }
 
 /*Style pour la page A propos Contact*/
+
+#formulairecontact{
+    width: 90%;
+}
+
+#catégorie{
+    width: 90%
+}
+
+#message{
+    width: 90%;
+    height: 100px;
+}
+
+body{
+    background-color: darkslategrey;
+}
+
+header{
+    font-size: xx-large;
+    text-align: center;
+}
+
+#logo{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
+}
