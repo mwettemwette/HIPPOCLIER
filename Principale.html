@@ -4,39 +4,48 @@
         <title>HIPPOCLIER</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script src='script.js'></script>
     </head>
 
 
 
     <body>
         <header>
-            <div id="logo">
-            <a href="Principale.html">
-                <img src="/images/logo.png" alt="logo" height="50vh" >
-            </a>
-            </div>
 
-            <div>
-                HIPPOCLIER
-            </div>
-
-            <div id="panier">
-                <a href="Contenu.html">
-                    <img src="" alt="Panier" height="50vh">
-                </a>
-            </div>
+            <!--on va faire un navbar pour ça et rajouter le contact avec une icone en plus-->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Principale.html">
+                        <img src="/images/logo.png" class="logo" alt="logo" height="60vh" >
+                    </a></li>
+                    <li><a href="Principale.html">
+                        <div class="titre">
+                            HIPPOCLIER
+                        </div>
+                    </a></li>
+                    <li><a href="contact.html">
+                        <img src="/images/contact.png" class="contact" alt="contact" height="50vh">
+                    </a></li>
+                    <li><a href="Contenu.html">
+                        <img src="/images/Panier.png" class="Panier" alt="panier" height="50vh">
+                    </a></li>
+                </ul>
+            </nav>
         </header>
 
+        <section    id="Fond">
+            <img src="/images/Fond.jp" width="100%" height="100%">
+        </section>
+
+
+        <!--faut mettre un bandeau avec les marques et le faire aller sur les images qui défilent au dessus avec un z index +1 lel-->
         <section>
             <h1 id="choix">Choisissez la marque de votre téléphone</h1>
             <map name="choixmarques">
             <div class="grillemarques">
-            <img src="/images/Apple.jpg" alt="Apple"
-            usemap="#Apple" width="100%" height="auto">
-            <img src="/images/Huawei.jpg" alt="Huawei"
-            usemap="#Huawei" width="100%" height="auto">
-            <img src="/images/Samsung.jpg" alt="Samsung"
-            usemap="#Samsung" width="100%" height="auto">
+            <img src="/images/Apple.jpg" onclick="Apple()" id="Apple" alt="Apple"  width="33%" height="auto">
+            <img src="/images/Huawei.jpg" onclick="Huawei()" id="Huawei" alt="Huawei" width="33%" height="auto">
+            <img src="/images/Samsung.jpg" onclick="Samsung()" id="Samsung" alt="Samsung" width="33%" height="auto">
             </div>
             </map>  
 
@@ -44,124 +53,88 @@
                 <area shape="default" alt="Apple" href="#Apple">
                  <!--il faut rajouter les images et les liens vers la page personnalisation correspondant au modèle clické -->
                 <div class="models" id="Applemodels" >
-                    <section>
-                        <a href="#choixmarques">
-                            <img src="/images/Retour.png" alt="Retour">
+                        <a>
+                            <img src="/images/Retour.png" onclick="Retour()" id="RetourA" alt="Retour">
                         </a>
-                    </section>
-
-                    <section>
+                   
                         <a href="">
-                            <img src="/images/model.jpg" alt="Amodel1">
+                            <img src="" id="Amodel1">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Amodel2">
+                            <img src="" id="Amodel2">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Amodel3">
+                            <img src="" id="Amodel3">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Amodel4">
+                            <img src=""  id="Amodel4">
                         </a>
-                    </section>
-
-                    <section>
+                   
                         <a href="">
-                            <img src=" /images/model.jpg" alt="Amodel5">
+                            <img src=" "  id="Amodel5">
                         </a>
-                    </section>
                 </div>
             </map>
 
             <map name="Huawei">
                 <area shape="default" alt="Huawei" href="#Huawei">
                 <div class="models" id="Huaweimodels">
-                    <section>
                         <a href="#choixmarques">
-                            <img src="/images/Retour.png" alt="Retour">
+                            <img src="/images/Retour.png" onclick="Retour()" id="RetourH" alt="Retour">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Hmodel1">
+                            <img src="" id="Hmodel1">
                         </a>
-                    </section>
-
-                    <section>
+                   
                         <a href="">
-                            <img src="/images/model.jpg" alt="Hmodel2">
+                            <img src="" id="Hmodel2">
                         </a>
-                    </section>
-
-                    <section>
+                   
                         <a href="">
-                            <img src="/images/model.jpg" alt="Hmodel3">
+                            <img src="" id="Hmodel3">
                         </a>
-                    </section>
 
-                    <section>
                         <a href="">
-                            <img src="/images/model.jpg" alt="Hmodel4">
+                            <img src="" id="Hmodel4">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Hmodel5">
+                            <img src="" id="Hmodel5">
                         </a>
-                    </section>
-
+                    
                 </div>
             </map>
             
             <map name="Samsung">
                 <area shape="default" alt="Samsung" href="#Samsung">
                 <div class="models" id="Samsungmodels">
-                    <section>
                         <a href="#choixmarques">
-                            <img src="/images/Retour.png" alt="Retour">
+                            <img src="/images/Retour.png" onclick="Retour()" id="RetourS" alt="Retour">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Smodel1">
+                            <img src="" alt="Smodel1">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Smodel2">
+                            <img src="" alt="Smodel2">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Smodel3">
+                            <img src="" alt="Smodel3">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Smodel4">
+                            <img src="" alt="Smodel4">
                         </a>
-                    </section>
-
-                    <section>
+                    
                         <a href="">
-                            <img src="/images/model.jpg" alt="Smodel5">
+                            <img src="" alt="Smodel5">
                         </a>
-                    </section>
                 </div>
             </map>
 
