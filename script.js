@@ -1,3 +1,4 @@
+/* Script pour la page Principale (peut être réutilisé)*/
 function showImage(imageId) {
     document.getElementById(imageId).style.display='block';
 }
@@ -41,3 +42,9 @@ function Samsung(){
     document.getElementById('Huaweimodels').style.display = 'none';
     document.getElementById('Samsungmodels').style.display = 'block';    
 }
+
+/* Script pour la page Contact */
+
+/* Script pour la page Contenu */
+
+/* Script pour la page Personnalisation */
