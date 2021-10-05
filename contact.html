@@ -7,18 +7,40 @@
     </head>
 
     <body>
+        <div class="grille">
+            <section>
+                <h1>A propos</h1><br>
+                <h2>Qui sommes-nous?</h2>
+                <p style="font-size: large;">Hippoclier nait d'une volonté de créer des coques de téléphone:<br>
+                Résistantes: fabriquées à partir du tout nouveau matériau <br>
+                Elégantes: complètement personnalisables avec des couleurs méticulesement choisies par notre équipe design<br>
+                A un prix abordable</p>
+                <p style= "font-size: large;">Ainsi, notre équipe se forme en 2018 à Arcachon pour commencer à vendre à l'échelle 
+                    nationale puis dans toute l'Union Européenne en 2021. <br>
+                Toutes les coques Hippoclier sont fabriquées en France.</p>
+                <h3>FAQ - Réponses aux questions réccurentes</h3>
+                <button type="button" onclick="showElement()">Comment annuler ma commande?</button>
+                
+                    
+                <p style="font-size:large;"></p>
+
+            </section>
+
     <section>
         <h1>Contactez-nous!</h1>
 
-        <p>Si vous avez la moindre question, l'équipe Hippoclier fera tout pour y répondre dans les plus brefs délais.</p>
-<fieldset style="width: 60%">
-    <legend>Formulaire de contact</legend>
+        <p style="font-size: large;">Si vous avez une question auquelle la FAQ ne répond pas ou concernant votre commande, l'équipe Hippoclier fera tout pour y répondre dans les <br> plus brefs délais.</p>
+<fieldset style="width: 90%">
+    <legend style="font-size: 150%;">Formulaire de contact</legend>
         <form action="/commande.php">
             <label for="prenom">Prénom:</label>
             <input type="text" id="formulairecontact" name="prenom"><br><br>
 
             <label for="nom">Nom :</label>
             <input type="text" id="formulairecontact" name="nom"><br><br>
+
+            <label for="mail">E-mail de contact :</label>
+            <input type="text" id="formulairecontact" name="mail"><br><br>
 
       
 
@@ -41,9 +63,13 @@
           <label for="message">Message:<br></label>
             <input type="text" id="message" name="message"><br><br>
 
-    </section>
-</fieldset>
+        <button type="button" onclick="alert('Votre message a bien été envoyé')">Envoyer</button>
 
+    
+</fieldset>
+</section>
+
+</div>
 
     </body>
 </html>

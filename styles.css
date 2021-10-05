@@ -64,22 +64,7 @@ form{
 }
 
 body{
-    background-color: darkslategrey;
-}
-
-header{
-    font-size: xx-large;
-    text-align: center;
-}
-
-#logo{
-    position: fixed;
-    top: 0;
-    left: 0;
-
-}
-
-footer{
-    position: relative;
-    bottom: 0px;
+    color:rgb(69, 114, 159);
+    background-color: rgb(236, 240, 247);
+    
 }
