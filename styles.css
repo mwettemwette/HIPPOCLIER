@@ -81,13 +81,14 @@ footer{
 
 .grille{
     display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 50vh 50vh;
+    grid-template-columns: 2vw 41vw 4vw 41vw 2vw;
+    grid-template-rows: 50vh 35vh;
 }
 
 form{
     display: flex;
     flex-direction: column;
+
 
 }
 
