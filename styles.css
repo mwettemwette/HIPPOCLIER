@@ -5,15 +5,22 @@ body{
 }
 
 header{
-    font-size: xx-large;
     text-align: center;
+    font-size: 5vh;
+}
+
+#panier{
+    position: fixed;
+    top: 0;
+    right: 0;
+
 }
 
 #logo{
     position: fixed;
     top: 0;
     left: 0;
-
+    
 }
 
 footer{
@@ -30,11 +37,27 @@ footer{
 .grillemarques{
     display: flex;
     text-align: center;
+    flex-shrink: 3;
+}
+.grillemarques > a{
+    width: 33%;
 }
 
-/*Style pour la page Personnalisation*/
+.models{
+    display: flex;
+    align-content: stretch;
+    text-align: center;
+    flex-wrap: wrap;   
+}
+.models > section {
+    text-align: inherit;
+    width: 32.5%;
+}
 
-/*Style pour la page Contenu de la commande*/
+
+/*Style pour la page Personnalisation uniquement*/
+
+/*Style pour la page Contenu de la commande uniquement*/
 
 .grille{
     display: grid;
@@ -48,6 +71,7 @@ form{
 
 }
 
+<<<<<<< HEAD
 /*Style pour la page A propos Contact*/
 
 #formulairecontact{
@@ -68,3 +92,6 @@ body{
     background-color: rgb(236, 240, 247);
     
 }
+=======
+/*Style pour la page A propos Contact uniquement*/
+>>>>>>> e97be24bec032add8e046c3c5930da77c38b162a
