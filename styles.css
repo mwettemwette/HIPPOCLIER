@@ -1,12 +1,23 @@
 /*Style pour toutes les pages*/
 
 body{
-    background-color: darkslategrey;
+    background-color: #e3eaea;
 }
 
 header{
     text-align: center;
     font-size: 5vh;
+}
+
+
+
+#HIPPPOCLIER{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 50vw;
+    right: 50vw;
+    
 }
 
 #panier{
@@ -30,6 +41,10 @@ footer{
 
 /*Style pour la page Principale uniquement*/
 
+#Fond{
+    z-index: -1;
+}
+
 #choix{
     text-align: center;
 }
@@ -43,6 +58,9 @@ footer{
     width: 33%;
 }
 
+#Retour{
+
+}
 .models{
     display: flex;
     align-content: stretch;
