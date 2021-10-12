@@ -1,0 +1,29 @@
+{"Marques" : [
+    {"name":"Apple"},
+    {"name":"Huawei"},
+    {"name":"Samsung"}
+]}
+
+{"Amodels":[
+    {"name":"Amodels1"},
+    {"name":"Amodels2"},
+    {"name":"Amodels3"},
+    {"name":"Amodels4"},
+    {"name":"Amodels5"},
+]}
+
+{"Hmodels":[
+    {"name":"Hmodels1"},
+    {"name":"Hmodels2"},
+    {"name":"Hmodels3"},
+    {"name":"Hmodels4"},
+    {"name":"Hmodels5"},
+]}
+
+{"Smodels":[
+    {"name":"Smodels1"},
+    {"name":"Smodels2"},
+    {"name":"Smodels3"},
+    {"name":"Smodels4"},
+    {"name":"Smodels5"},
+]}
