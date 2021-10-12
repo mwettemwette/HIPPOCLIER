@@ -8,6 +8,8 @@
         </head>
 
         <body>
+            <header id="header"></header>
+
             <div class="grille">
             <section></section>
             <section>
@@ -29,7 +31,7 @@
                 <!--info livraison-->
                 <h1>Informations livraison</h1>
 
-                <form action="/commande.php">
+                <form action="oui">
                     <label for="prenom">Prénom :</label>
                     <input type="text" id="prenom" name="prenom"><br><br>
 
@@ -54,9 +56,17 @@
                     <label for="comp">Informations complémentaires :</label>
                     <input type="text" id="comp" name="comp"><br><br>
 
-                    <input type="submit" value="Valider">
+                    <label for="liv">Date de livraison :</label>
+                    <input type="date" id="liv" name="liv" required><br><br>
 
-                    <input type="reset" value="Effacer">
+                    <label for="promo">Code promo :</label>
+                    <input type="text" id="promo" name="promo"><br><br>
+
+                    <div id="valider">
+                        <input type="submit" value="Valider">
+                        <input type="reset" value="Effacer">
+                    </div>
+
                 </form>
                 <!--date de livraison + calcul prix si express (72h) ou pas-->
                 
@@ -69,13 +79,17 @@
                 <h1>Récapitulatif de la commande</h1>
                 <p>Panier :</p>
                 <p>Livraison :</p>
-                <p>Total :</p>
+                <p>Total :
+                    <input type="text" name="Total" id="Total" readonly>
+                </p> 
                 
                 <button type="button" onclick="alert()'Merci pour votre commande !')">Payer</button>
                 <br> <a href="https://bit.ly/2VYkGPX">Régler votre commande</a>
             </section>
             <section></section>
             </div>
+
+            <footer id="footer"></footer>
         </body>
 
 

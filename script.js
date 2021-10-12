@@ -1,4 +1,19 @@
+/* Script pour toutes les pages */
+
+fetch("header.html")
+    .then(contenu => contenu.text())
+    .then(texte => {
+        document.getElementById("header").innerHTML = texte;
+})
+
+fetch("footer.html")
+    .then(contenu => contenu.text())
+    .then(texte => {
+        document.getElementById("footer").innerHTML = texte;
+})
+
 /* Script pour la page Principale (peut être réutilisé)*/
+
 function showImage(imageId) {
     document.getElementById(imageId).style.display='block';
 }
@@ -45,6 +60,15 @@ function Samsung(){
 
 /* Script pour la page Contact */
 
-/* Script pour la page Contenu */
+/* Script pour la page Contenu de la commande*/
+
+var A1
+
+function calculPrix(){
+
+    var total = ()
+
+    document.getElementById("Total").value=total;
+}
 
 /* Script pour la page Personnalisation */

@@ -82,14 +82,18 @@ footer{
 .grille{
     display: grid;
     grid-template-columns: 2vw 41vw 4vw 41vw 2vw;
-    grid-template-rows: 50vh 35vh;
+    grid-template-rows: 35vh 35vh;
 }
 
 form{
     display: flex;
     flex-direction: column;
+}
 
-
+#valider{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }
 
 /*Style pour la page A propos Contact*/
