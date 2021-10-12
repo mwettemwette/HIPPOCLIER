@@ -92,3 +92,6 @@ function calculPrixtotal(){
 }
 
 /* Script pour la page Personnalisation */
+/* faire des classes cf teams */
+let produit_id = new URLSearchParams(window.location.search).get("id")
+let bidule = bidules.find(bidule => bidule.id == produit_id)
