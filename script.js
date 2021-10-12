@@ -61,14 +61,34 @@ function Samsung(){
 /* Script pour la page Contact */
 
 /* Script pour la page Contenu de la commande*/
-/*
+
 var A1
 
-function calculPrix(){
+function calculDate() {
+        var Diffdate =  -
+}
 
-    var total = ()
+function calculPrixProduit() {
+    var prixpanier =
+
+    document.getElementById("Prixpanier").value=prixpanier
+}
+
+function calculPrixLivraison() {
+    var liv
+
+    var express = (8 if Diffdate <= 4)
+
+    var prixlivraison = livraison + express
+
+    document.getElementById("Prixliv").value = prixlivraison
+}
+
+function calculPrixtotal(){
+
+    var total = (prixpanier + prixlivraison)
 
     document.getElementById("Total").value=total;
-}*/
+}
 
 /* Script pour la page Personnalisation */

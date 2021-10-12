@@ -13,7 +13,6 @@ header{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/*problème au niveau de la navbar quand on fenetre sur 1/4 de l'écran*/
 
 .navbar{
     background-color: white;
@@ -21,6 +20,7 @@ header{
     top: 0;
     width: 100%;
     height: 10%;
+    display: block;
 }
 
 ul{
@@ -37,7 +37,8 @@ ul{
 
 
 footer{
-    position: relative;
+    position: fixed;
+    bottom: 0;
     bottom: 0px;
 }
 
@@ -82,7 +83,7 @@ footer{
 .grille{
     display: grid;
     grid-template-columns: 2vw 41vw 4vw 41vw 2vw;
-    grid-template-rows: 35vh 35vh;
+    grid-template-rows: 10vh 35vh 35vh;
 }
 
 form{
@@ -94,6 +95,10 @@ form{
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
+}
+
+#PrixPanier{
+    color:  #e3eaea;
 }
 
 /*Style pour la page A propos Contact*/
