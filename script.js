@@ -61,7 +61,7 @@ function Samsung(){
 /* Script pour la page Contact */
 
 /* Script pour la page Contenu de la commande*/
-
+/*
 var A1
 
 function calculPrix(){
@@ -69,6 +69,6 @@ function calculPrix(){
     var total = ()
 
     document.getElementById("Total").value=total;
-}
+}*/
 
 /* Script pour la page Personnalisation */
