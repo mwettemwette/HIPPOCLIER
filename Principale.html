@@ -1,12 +1,11 @@
 <!DOCTYPE html>
     <html lang="fr">
+
     <head>
         <title>HIPPOCLIER</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
-        <script src='script.js'></script>
     </head>
-
 
 
     <body>
@@ -16,7 +15,7 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="Principale.html">
-                        <img src="/images/logo.png" class="logo" alt="logo" height="60vh" >
+                        <img src="/images/logo.png" class="logo" alt="logo" height="50vh" >
                     </a></li>
                     <li><a href="Principale.html">
                         <div class="titre">
@@ -39,106 +38,94 @@
 
 
         <!--faut mettre un bandeau avec les marques et le faire aller sur les images qui défilent au dessus avec un z index +1 lel-->
-        <section>
-            <h1 id="choix">Choisissez la marque de votre téléphone</h1>
-            <map name="choixmarques">
-            <div class="grillemarques">
+        <h1 id="choix">Choisissez la marque de votre téléphone</h1>
+        <div class="grillemarques">
             <img src="/images/Apple.jpg" onclick="Apple()" id="Apple" alt="Apple"  width="33%" height="auto">
             <img src="/images/Huawei.jpg" onclick="Huawei()" id="Huawei" alt="Huawei" width="33%" height="auto">
             <img src="/images/Samsung.jpg" onclick="Samsung()" id="Samsung" alt="Samsung" width="33%" height="auto">
-            </div>
-            </map>  
+        </div>
 
-            <map name="Apple">
-                <area shape="default" alt="Apple" href="#Apple">
-                 <!--il faut rajouter les images et les liens vers la page personnalisation correspondant au modèle clické -->
-                <div class="models" id="Applemodels" >
-                        <a>
-                            <img src="/images/Retour.png" onclick="Retour()" id="RetourA" alt="Retour">
-                        </a>
-                   
-                        <a href="">
-                            <img src="" id="Amodel1">
-                        </a>
-                    
-                        <a href="">
-                            <img src="" id="Amodel2">
-                        </a>
-                    
-                        <a href="">
-                            <img src="" id="Amodel3">
-                        </a>
-                    
-                        <a href="">
-                            <img src=""  id="Amodel4">
-                        </a>
-                   
-                        <a href="">
-                            <img src=" "  id="Amodel5">
-                        </a>
-                </div>
-            </map>
 
-            <map name="Huawei">
-                <area shape="default" alt="Huawei" href="#Huawei">
-                <div class="models" id="Huaweimodels">
-                        <a href="#choixmarques">
-                            <img src="/images/Retour.png" onclick="Retour()" id="RetourH" alt="Retour">
-                        </a>
-                    
-                        <a href="">
-                            <img src="" id="Hmodel1">
-                        </a>
+        <!--il faut rajouter les images et les liens vers la page personnalisation correspondant au modèle clické -->
+        <div class="models" id="Applemodels" >
+            <a>
+                <img src="/images/Retour.png" onclick="Retour()" id="RetourA" alt="Retour">
+            </a>
                    
-                        <a href="">
-                            <img src="" id="Hmodel2">
-                        </a>
+            <a href="">
+                <img src="" id="Amodel1">
+            </a>
+                    
+            <a href="">
+                <img src="" id="Amodel2">
+            </a>
+                    
+            <a href="">
+                <img src="" id="Amodel3">
+            </a>
+                    
+            <a href="">
+                <img src=""  id="Amodel4">
+            </a>
                    
-                        <a href="">
-                            <img src="" id="Hmodel3">
-                        </a>
+            <a href="">
+                <img src=" "  id="Amodel5">
+            </a>
+        </div>
 
-                        <a href="">
-                            <img src="" id="Hmodel4">
-                        </a>
+        <div class="models" id="Huaweimodels">
+            <a href="#choixmarques">
+                <img src="/images/Retour.png" onclick="Retour()" id="RetourH" alt="Retour">
+            </a>
                     
-                        <a href="">
-                            <img src="" id="Hmodel5">
-                        </a>
-                    
-                </div>
-            </map>
-            
-            <map name="Samsung">
-                <area shape="default" alt="Samsung" href="#Samsung">
-                <div class="models" id="Samsungmodels">
-                        <a href="#choixmarques">
-                            <img src="/images/Retour.png" onclick="Retour()" id="RetourS" alt="Retour">
-                        </a>
-                    
-                        <a href="">
-                            <img src="" alt="Smodel1">
-                        </a>
-                    
-                        <a href="">
-                            <img src="" alt="Smodel2">
-                        </a>
-                    
-                        <a href="">
-                            <img src="" alt="Smodel3">
-                        </a>
-                    
-                        <a href="">
-                            <img src="" alt="Smodel4">
-                        </a>
-                    
-                        <a href="">
-                            <img src="" alt="Smodel5">
-                        </a>
-                </div>
-            </map>
+            <a href="">
+                <img src="" id="Hmodel1">
+            </a>
+                   
+            <a href="">
+                <img src="" id="Hmodel2">
+            </a>
+                   
+            <a href="">
+                <img src="" id="Hmodel3">
+            </a>
 
-        <!--Menu avec les produits-->
+            <a href="">
+                <img src="" id="Hmodel4">
+            </a>
+                    
+            <a href="">
+                <img src="" id="Hmodel5">
+            </a>
+                
+        </div>
+
+        <div class="models" id="Samsungmodels">
+            <a href="#choixmarques">
+                <img src="/images/Retour.png" onclick="Retour()" id="RetourS" alt="Retour">
+            </a>
+                    
+            <a href="">
+                <img src="" alt="Smodel1">
+            </a>
+                    
+            <a href="">
+                <img src="" alt="Smodel2">
+            </a>
+                    
+            <a href="">
+                <img src="" alt="Smodel3">
+            </a>
+                    
+            <a href="">
+                <img src="" alt="Smodel4">
+            </a>
+                    
+            <a href="">
+                <img src="" alt="Smodel5">
+            </a>
+        </div>
+
         <!--mdr-->
 
         <h1>petit changement</h1>
@@ -146,6 +133,7 @@
         </section>
     </body>
 
+    <script src='script.js'></script>
 
 
     <footer>

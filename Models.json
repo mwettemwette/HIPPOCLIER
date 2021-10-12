@@ -1,29 +1,17 @@
-{"Marques" : [
-    {"name":"Apple"},
-    {"name":"Huawei"},
-    {"name":"Samsung"}
-]}
-
-{"Amodels":[
-    {"name":"Amodels1"},
-    {"name":"Amodels2"},
-    {"name":"Amodels3"},
-    {"name":"Amodels4"},
-    {"name":"Amodels5"},
-]}
-
-{"Hmodels":[
-    {"name":"Hmodels1"},
-    {"name":"Hmodels2"},
-    {"name":"Hmodels3"},
-    {"name":"Hmodels4"},
-    {"name":"Hmodels5"},
-]}
-
-{"Smodels":[
-    {"name":"Smodels1"},
-    {"name":"Smodels2"},
-    {"name":"Smodels3"},
-    {"name":"Smodels4"},
-    {"name":"Smodels5"},
+{"Models" : [
+    {"modele":"Amodels1", "marque":"Apple", "prix":"","lien":"ouioui.html","image":"image/Apple.jpg"},
+    {"modele":"Amodels2", "marque":"Apple", "prix":"","lien":"","image":""},
+    {"modele":"Amodels3", "marque":"Apple", "prix":"","lien":"","image":""},
+    {"modele":"Amodels4", "marque":"Apple", "prix":"","lien":"","image":""},
+    {"modele":"Amodels5", "marque":"Apple", "prix":"","lien":"","image":""},
+    {"modele":"Hmodels1", "marque":"Huawei", "prix":"","lien":"","image":""},
+    {"modele":"Hmodels2", "marque":"Huawei", "prix":"","lien":"","image":""},
+    {"modele":"Hmodels3", "marque":"Huawei", "prix":"","lien":"","image":""},
+    {"modele":"Hmodels4", "marque":"Huawei", "prix":"","lien":"","image":""},
+    {"modele":"Hmodels5", "marque":"Huawei", "prix":"","lien":"","image":""},
+    {"modele":"Smodels1", "marque":"Samsung", "prix":"","lien":"","image":""},
+    {"modele":"Smodels2", "marque":"Samsung", "prix":"","lien":"","image":""},
+    {"modele":"Smodels3", "marque":"Samsung", "prix":"","lien":"","image":""},
+    {"modele":"Smodels4", "marque":"Samsung", "prix":"","lien":"","image":""},
+    {"modele":"Smodels5", "marque":"Samsung", "prix":"","lien":"","image":""}
 ]}
