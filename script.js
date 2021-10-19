@@ -14,6 +14,8 @@ fetch("footer.html")
 
 /* Script pour la page Principale (peut être réutilisé)*/
 
+
+
 function showImage(imageId) {
     document.getElementById(imageId).style.display='block';
 }
@@ -31,67 +33,15 @@ function Retour(){
     hideImage('Samsungmodels');
 }
 
-function Apple(){
-    document.getElementsByClassName('grillemarques').style.display='none';
-    document.getElementsById('Huawei').style.display='none';
-    document.getElementsById('Samsung').style.display='none';
-    document.getElementById('Applemodels').style.display = 'block';
-    document.getElementById('Huaweimodels').style.display = 'none';
-    document.getElementById('Samsungmodels').style.display = 'none';    
-}
-
-function Huawei(){
-    document.getElementsById('Apple').style.display='none';
-    document.getElementsById('Huawei').style.display='none';
-    document.getElementsById('Samsung').style.display='none';
-    document.getElementById('Applemodels').style.display = 'none';
-    document.getElementById('Huaweimodels').style.display = 'block';
-    document.getElementById('Samsungmodels').style.display = 'none';    
-}
-
-function Samsung(){
-    document.getElementsById('Apple').style.display='none';
-    document.getElementsById('Huawei').style.display='none';
-    document.getElementsById('Samsung').style.display='none';
-    document.getElementById('Applemodels').style.display = 'none';
-    document.getElementById('Huaweimodels').style.display = 'none';
-    document.getElementById('Samsungmodels').style.display = 'block';    
-}
 
 /* Script pour la page Contact */
 
 /* Script pour la page Contenu de la commande*/
 
-var A1
 
-function calculDate() {
-        var Diffdate =  -
-}
 
-function calculPrixProduit() {
-    var prixpanier =
 
-    document.getElementById("Prixpanier").value=prixpanier
-}
 
-function calculPrixLivraison() {
-    var liv
 
-    var express = (8 if Diffdate <= 4)
-
-    var prixlivraison = livraison + express
-
-    document.getElementById("Prixliv").value = prixlivraison
-}
-
-function calculPrixtotal(){
-
-    var total = (prixpanier + prixlivraison)
-
-    document.getElementById("Total").value=total;
-}
 
 /* Script pour la page Personnalisation */
-/* faire des classes cf teams */
-let produit_id = new URLSearchParams(window.location.search).get("id")
-let bidule = bidules.find(bidule => bidule.id == produit_id)

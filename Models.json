@@ -1,17 +1,172 @@
-{"Models" : [
-    {"modele":"Amodels1", "marque":"Apple", "prix":"","lien":"ouioui.html","image":"image/Apple.jpg"},
-    {"modele":"Amodels2", "marque":"Apple", "prix":"","lien":"","image":""},
-    {"modele":"Amodels3", "marque":"Apple", "prix":"","lien":"","image":""},
-    {"modele":"Amodels4", "marque":"Apple", "prix":"","lien":"","image":""},
-    {"modele":"Amodels5", "marque":"Apple", "prix":"","lien":"","image":""},
-    {"modele":"Hmodels1", "marque":"Huawei", "prix":"","lien":"","image":""},
-    {"modele":"Hmodels2", "marque":"Huawei", "prix":"","lien":"","image":""},
-    {"modele":"Hmodels3", "marque":"Huawei", "prix":"","lien":"","image":""},
-    {"modele":"Hmodels4", "marque":"Huawei", "prix":"","lien":"","image":""},
-    {"modele":"Hmodels5", "marque":"Huawei", "prix":"","lien":"","image":""},
-    {"modele":"Smodels1", "marque":"Samsung", "prix":"","lien":"","image":""},
-    {"modele":"Smodels2", "marque":"Samsung", "prix":"","lien":"","image":""},
-    {"modele":"Smodels3", "marque":"Samsung", "prix":"","lien":"","image":""},
-    {"modele":"Smodels4", "marque":"Samsung", "prix":"","lien":"","image":""},
-    {"modele":"Smodels5", "marque":"Samsung", "prix":"","lien":"","image":""}
-]}
+{
+    "marques" :[
+        {
+            "name" : "Apple",
+            "id" : 1,
+            "image" : "apple.jpg",
+            "prix" : 30
+        },
+        {
+            "name" : "Huawei",
+            "id" : 2,
+            "image" : "huawei.jpg",
+            "prix" : 25 
+        },
+        {
+            "name" : "Samsung",
+            "id" : 3,
+            "image" : "samsung.jpg",
+            "prix" : 20
+        }
+    ]
+}
+
+{ 
+    "models" :[
+        {
+            "name" : "Amodel1",
+            "prix" : 30,
+            "marque" : "Apple",
+            "id" : 1001,
+            "image" : "amodel1.jpg",
+            "lien" : "personnalisation.html?id=1001"
+        },
+        {
+            "name" : "Amodel2",
+            "prix" : 30,
+            "marque" : "Apple",
+            "id" : 1002,
+            "image" : "amodel2.jpg",
+            "lien" : "personnalisation.html?id=1002"
+        },
+        {
+            "name" : "Amodel3",
+            "prix" : 30,
+            "marque" : "Apple",
+            "id" : 1003,
+            "image" : "amodel3.jpg",
+            "lien" : "personnalisation.html?id=1003"
+        },
+        {
+            "name" : "Amodel4",
+            "prix" : 30,
+            "marque" : "Apple",
+            "id" : 1004,
+            "image" : "amodel4.jpg",
+            "lien" : "personnalisation.html?id=1004"
+        },
+        {
+            "name" : "Amodel5",
+            "prix" : 30,
+            "marque" : "Apple",
+            "id" : 1005,
+            "image" : "amodel5.jpg",
+            "lien" : "personnalisation.html?id=1005"
+        },
+        {
+            "name" : "Hmodel1",
+            "prix" : 25,
+            "marque" : "Huawei",
+            "id" : 2001,
+            "image" : "hmodel1.jpg",
+            "lien" : "personnalisation.html?id=2001"
+        },
+        {
+            "name" : "Hmodel2",
+            "prix" : 25,
+            "marque" : "Huawei",
+            "id" : 2002,
+            "image" : "hmodel2.jpg",
+            "lien" : "personnalisation.html?id=2002"
+        },
+        {
+            "name" : "Hmodel3",
+            "prix" : 25,
+            "marque" : "Huawei",
+            "id" : 2003,
+            "image" : "hmodel3.jpg",
+            "lien" : "personnalisation.html?id=2003"
+        },
+        {
+            "name" : "Hmodel4",
+            "prix" : 25,
+            "marque" : "Huawei",
+            "id" : 2004,
+            "image" : "hmodel4.jpg",
+            "lien" : "personnalisation.html?id=2004"
+        },
+        {
+            "name" : "Hmodel5",
+            "prix" : 25,
+            "marque" : "Huawei",
+            "id" : 2005,
+            "image" : "hmodel5.jpg",
+            "lien" : "personnalisation.html?id=2005"
+        },
+        {
+            "name" : "Smodel1",
+            "prix" : 20,
+            "marque" : "Samsung",
+            "id" : 3001,
+            "image" : "smodel1.jpg",
+            "lien" : "personnalisation.html?id=3001"
+        },
+        {
+            "name" : "Smodel2",
+            "prix" : 20,
+            "marque" : "Samsung",
+            "id" : 3002,
+            "image" : "smodel2.jpg",
+            "lien" : "personnalisation.html?id=3002"
+        },
+        {
+            "name" : "Smodel3",
+            "prix" : 20,
+            "marque" : "Samsung",
+            "id" : 3003,
+            "image" : "smodel3.jpg",
+            "lien" : "personnalisation.html?id=3003"
+        },
+        {
+            "name" : "Smodel4",
+            "prix" : 20,
+            "marque" : "Samsung",
+            "id" : 3004,
+            "image" : "smodel4.jpg",
+            "lien" : "personnalisation.html?id=3004"
+        },
+        {
+            "name" : "Smodel5",
+            "prix" : 20,
+            "marque" : "Samsung",
+            "id" : 3005,
+            "image" : "smodel5.jpg",
+            "lien" : "personnalisation.html?id=3005"
+        }
+    ]
+}
+
+{
+    "Code Promo" : [
+        {
+            "code" : "Momo",
+            "réduction" : 50,
+            "pourcentage" : 0
+        },
+        {
+            "code" : "Roger",
+            "réduction" : 0,
+            "pourcentage" : 70
+        },
+        {
+            "code" : "Cacophonie",
+            "réduction" : 0,
+            "pourcentage" : 50
+        },
+        {
+            "code" : "CPE",
+            "réduction" : 5,
+            "pourcentage" : 0
+        },
+    ]
+}
