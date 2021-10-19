@@ -36,6 +36,16 @@ function Retour(){
 
 /* Script pour la page Contact */
 
+
+  function showElement() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
 /* Script pour la page Contenu de la commande*/
 
 
