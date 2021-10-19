@@ -1,3 +1,4 @@
+
 {
     "marques" :[
         {
@@ -6,6 +7,7 @@
             "image" : "apple.jpg",
             "prix" : 30
         },
+        
         {
             "name" : "Huawei",
             "id" : 2,
@@ -18,10 +20,7 @@
             "image" : "samsung.jpg",
             "prix" : 20
         }
-    ]
-}
-
-{ 
+    ],
     "models" :[
         {
             "name" : "Amodel1",
@@ -143,10 +142,7 @@
             "image" : "smodel5.jpg",
             "lien" : "personnalisation.html?id=3005"
         }
-    ]
-}
-
-{
+    ],
     "Code Promo" : [
         {
             "code" : "Momo",
@@ -159,7 +155,7 @@
             "pourcentage" : 70
         },
         {
-            "code" : "Cacophonie",
+            "code" : "Cacundefinedophonie",
             "réduction" : 0,
             "pourcentage" : 50
         },
@@ -167,6 +163,6 @@
             "code" : "CPE",
             "réduction" : 5,
             "pourcentage" : 0
-        },
+        }
     ]
 }

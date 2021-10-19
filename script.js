@@ -33,7 +33,30 @@ function Retour(){
     hideImage('Samsungmodels');
 }
 
+function calculDate(date1) {
+    valRen = false;
 
+    date2f = new Date();
+    date2 = date2f.toISOString().split("T")[0];
+
+    date1 = date1.split("-");
+    date2 = date2.split("-");
+
+    console.log(date1, date2)
+
+    if(parseInt(date1[0]) <= parseInt(date2[0])){
+        if(parseInt(date1[1]) <= parseInt(date2[1])){
+            if(Math.abs(parseInt(date2[2]) - parseInt(date1[2])) <= 3){
+                valRen = true;
+            }
+        }
+        
+    }
+
+    console.log(valRen);
+    return valRen;
+
+}
 /* Script pour la page Contact */
 
 /* Script pour la page Contenu de la commande*/
