@@ -4,7 +4,7 @@
     <head>
         <title>HIPPOCLIER</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" >
         <script src='script.js' defer></script>
     </head>
 
@@ -19,32 +19,33 @@
 
         <!--faut mettre un bandeau avec les marques et le faire aller sur les images qui défilent au dessus avec un z index +1 lel-->
         <h1 id="choix">Choisissez la marque de votre téléphone</h1>
-
-        <template id="marques">
-            <div class="grillemarques">
-                <a>
-                    <img src="/images/{{image}}.jpg" onclick="Apple()" id="{{id}}" alt="{{name}}">
-                </a>
-            </div>
-        </template>
+        <div id="grillemarques">
+            <template id="marques">
+                <div>
+                    <a href="javascript:nomfonction({{name}})"> <!--Mdr faut faire la fonction JS gros teubé-->
+                    <img src="/images/{{image}}.jpg"  id="{{id}}" alt="{{name}}">
+                    </a>
+                    <p>A partir de {{prix}} €</p>
+                </div>
+            </template>
+        </div>
 
     
-
-        <template id="modeles">
-            <section>
-            <div class="{{marque}}">
-                <a href="{{lien}}">
-                    <img src="/images/{{image}}.jpg" id="{{id}}" alt="{{name}}">
-                </a>
-            </div>
-            </section>
-        </template>
-
+        <div id="grillemodels">
+            <template id="modeles">
+                <div class="{{marque}}">
+                    <a href="{{lien}}">
+                        <img src="/images/{{image}}.jpg" id="{{id}}" alt="{{name}}">
+                    </a>
+                </div>
+            </template>
+        </div>
 
         
-        <footer id="footer"></footer>
+        
 
     </body>
 
+    <footer id="footer"></footer>
 
     </html>

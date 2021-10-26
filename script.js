@@ -26,9 +26,7 @@ function Retour(){
     showImage('Apple');
     showImage('Huawei');
     showImage('Samsung');
-    hideImage('Applemodels');
-    hideImage('Huaweimodels');
-    hideImage('Samsungmodels');
+    hideImage('grillemodels');
 }
 
 let contenu_models={};
@@ -51,9 +49,9 @@ fetch('Models.json')
         .replace(/{{image}}/g, i.image)
         .replace(/{{id}}/g, i.id)   
         .replace(/{{name}}/g, i.name)
+        .replace(/{{prix}}/g, i.prix)
       clone.firstElementChild.innerHTML = newContent
-      console.log(clone)
-      document.body.appendChild(clone);}
+      document.getElementById('grillemarques').appendChild(clone);}
 
     let template2 = document.querySelector("#modeles");
     for(const i of contenu_models){
@@ -65,8 +63,7 @@ fetch('Models.json')
         .replace(/{{id}}/g, i.id)
         .replace(/{{name}}/g, i.name)
       clone.firstElementChild.innerHTML = newContent
-      console.log(clone)
-      document.body.appendChild(clone);
+      document.getElementById('grillemodels').appendChild(clone);
   }
 })
 
@@ -104,7 +101,6 @@ function calculDate(date1) {
         }
         
     }
-
     console.log(valRen);
     return valRen;
 }

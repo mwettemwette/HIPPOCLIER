@@ -4,7 +4,8 @@
         <head>
             <title>Votre commande</title>
             <meta charset="UTF-8">
-            <link rel="stylesheet" href="styles.css">
+            <link rel='stylesheet' href="styles.css">
+            <script src='template.js' defer></script>
         </head>
 
         <body>
@@ -17,18 +18,43 @@
             <section></section>
             <section></section>
             <section></section>
-            <section>
+
+
+
+
+
+            <section id="Panier">
                 <!--récap du panier avec les images-->
                 <h1>Votre panier</h1>
+                <template id="article">
+                    <div class="{{name}}">
+                        <img src="/images/{{image}}.jpg" alt="img {{name}}">
+                        <p>{{name}}</p>
+                    </div>
+                </template>
+
+            </section>
+
+
+
+
+
 
 
             </section>
             
             <section></section>
-            <section>
+            <section id="Detail">
                 <!--récap du panier-->
-                <h1>Détail panier</h1>
+                    <h1>Détail panier</h1>
+                    <template id="detailarticle">
+                        <div class="{{name}}">
+                            <p> {{name}} x {{nombre}}</p>
 
+
+                        </div>
+                    </template>
+                </section>
             </section>
             <section></section>
             <section></section>
@@ -62,7 +88,7 @@
                     <input type="text" id="comp" name="comp" ><br><br>
 
                     <label for="liv">Date de livraison :</label>
-                    <input type="date" id="liv" name="liv" onchange="calculDate(this.value)" required><br><br>
+                    <input type="date" id="liv" name="liv" onchange="calculDate(this.value)" min="" required><br><br>
 
                     <label for="promo">Code promo :</label>
                     <input type="text" id="promo" name="promo"><br><br>
@@ -101,6 +127,6 @@
             <footer id="footer"></footer>
         </body>
 
-        <script src="script.js"></script>
+
 
     </html>

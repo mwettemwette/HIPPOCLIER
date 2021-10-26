@@ -37,9 +37,7 @@ ul{
 
 
 footer{
-    position: fixed;
-    bottom: 0;
-    bottom: 0px;
+  display:;
 }
 
 /*Style pour la page Principale uniquement*/
@@ -52,23 +50,26 @@ footer{
     text-align: center;
 }
 
-.grillemarques{
-    display: flex;
-    text-align: center;
-    flex-shrink: 3;
-}
-.grillemarques > a{
-    width: 33%;
+#grillemarques{
+  display: flex;
+  text-align: center;
+  flex-shrink: 3;
 }
 
-#Retour{
+#grillemarques > div{
+  width: 32vw;
+}
+
+
+.Retour{
 
 }
-.models{
-    display: flex;
-    align-content: stretch;
-    text-align: center;
-    flex-wrap: wrap;   
+
+#grillemodels{
+  display: flex;
+  align-content: stretch;
+  text-align: center;
+  flex-wrap: wrap;   
 }
 .models > section {
     text-align: inherit;
@@ -172,6 +173,7 @@ footer{
 }
 
 /*Style pour la page Personnalisation uniquement*/
+
 
 /*Style pour la page Contenu de la commande uniquement*/
 

@@ -1,5 +1,62 @@
+let contenu_models={};
+let contenu_marques={};
+let contenu_promo={};
+let contenu_panier={};
 
-/* bandeau défilant */
+fetch('Models.json')
+.then(function(response){
+    return response.json();
+})
+.then(function(json){
+    let contenu_marques=json["marques"];
+    let contenu_models=json["models"];
+    let contenu_promo=json["Code Promo"];
+    let contenu_panier=json["Paniertest"];
+
+    let tempmarque = document.querySelector("#marques");
+    if(tempmarque===null, false){
+    for(const i of contenu_marques){
+      let clone = document.importNode(tempmarque.content, true);
+      newContent = clone.firstElementChild.innerHTML
+        .replace(/{{image}}/g, i.image)
+        .replace(/{{id}}/g, i.id)   
+        .replace(/{{name}}/g, i.name)
+      clone.firstElementChild.innerHTML = newContent
+      document.body.appendChild(clone);}}
+
+
+
+
+
+    let temppanier = document.querySelector("#article");
+    for(const i of contenu_panier){
+      let clone = document.importNode(temppanier.content, true);
+
+      newContent = clone.firstElementChild.innerHTML
+        .replace(/{{image}}/g, i.image)
+        .replace(/{{name}}/g, i.name)
+      clone.firstElementChild.innerHTML = newContent
+      console.log(clone)
+      document.getElementById('Panier').appendChild(clone);}
+
+
+
+
+
+
+      let tempdetail = document.querySelector("#detailarticle");
+      for(const i of contenu_panier){
+        let clone = document.importNode(tempdetail.content, true);
+        newContent = clone.firstElementChild.innerHTML
+          .replace(/{{name}}/g, i.name)
+      .replace(/{{nombre}}/g, i.nombre)
+        clone.firstElementChild.innerHTML = newContent
+        console.log(clone)
+        document.getElementById('Detail').appendChild(clone);}
+})
+
+
+/* bandeau défilant *//*
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,8 +84,8 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-
-  /*contact*/
+*/
+  /*contact*//*
   function showElement() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "none") {
@@ -38,3 +95,4 @@ function showSlides(n) {
     }
   }
 }
+*/

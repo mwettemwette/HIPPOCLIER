@@ -12,7 +12,7 @@
             "name" : "Huawei",
             "id" : 2,
             "image" : "Huawei",
-            "prix" : 25 
+            "prix" : 25
         },
         {
             "name" : "Samsung",
@@ -28,7 +28,7 @@
             "prix": 0,
             "id" : 0,
             "image" : "Retour",
-            "lien" : "#marques"
+            "lien" : "Principale.html#grillemarques"
         },
         {
             "name" : "Amodel1",
@@ -171,6 +171,35 @@
             "code" : "CPE",
             "réduction" : 5,
             "pourcentage" : 0
+        }
+    ],
+    "Paniertest" : [
+        {
+            "name" : "Smodel5",
+            "prix" : 20,
+            "marque" : "Samsung",
+            "id" : 3005,
+            "image" : "smodel5",
+            "lien" : "personnalisation.html?id=3005",
+            "nombre" : 3
+        },
+        {
+            "name" : "Hmodel5",
+            "prix" : 25,
+            "marque" : "Huawei",
+            "id" : 2005,
+            "image" : "hmodel5",
+            "lien" : "personnalisation.html?id=2005",
+            "nombre" : 1
+        },
+        {
+            "name" : "Amodel1",
+            "prix" : 30,
+            "marque" : "Apple",
+            "id" : 1001,
+            "image" : "amodel1",
+            "lien" : "personnalisation.html?id=1001",
+            "nombre" : 4
         }
     ]
 }
