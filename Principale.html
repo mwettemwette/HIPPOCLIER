@@ -5,10 +5,11 @@
         <title>HIPPOCLIER</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script src='script.js' defer></script>
     </head>
 
 
-    <body >
+    <body>
         <header id="header"></header>
 
         <!--<section id="Fond">
@@ -18,121 +19,36 @@
 
         <!--faut mettre un bandeau avec les marques et le faire aller sur les images qui défilent au dessus avec un z index +1 lel-->
         <h1 id="choix">Choisissez la marque de votre téléphone</h1>
-        <!--<div class="grillemarques">
-            <img src="/images/Apple.jpg" onclick="Apple()" id="Apple" alt="Apple"  width="33%" height="auto">
-            <img src="/images/Huawei.jpg" onclick="Huawei()" id="Huawei" alt="Huawei" width="33%" height="auto">
-            <img src="/images/Samsung.jpg" onclick="Samsung()" id="Samsung" alt="Samsung" width="33%" height="auto">
-        </div>
-
 
         <template id="marques">
             <div class="grillemarques">
                 <a>
-                    <img src="{{image}}" onclick="Apple()" id="{{name}}" alt="{{name}}">
-                </a>
-            </div>
-        </template>-->
-
-        <template id="modeles">
-            <div class="{{marque}}">
-                <a href="{{lien}}">
-                    <img src="{{image}}" id="{{id}}" alt="{{name}}">
+                    <img src="/images/{{image}}.jpg" onclick="Apple()" id="{{id}}" alt="{{name}}">
                 </a>
             </div>
         </template>
 
-
-
-        <!--il faut rajouter les images et les liens vers la page personnalisation correspondant au modèle clické -->
-        <!--<div class="models" id="Applemodels" >
+        <div class="Retour">
             <a>
-                <img src="/images/Retour.png" onclick="Retour()" id="RetourA" alt="Retour">
-            </a>
-                   
-            <a href="">
-                <img src="" id="Amodel1">
-            </a>
-                    
-            <a href="">
-                <img src="" id="Amodel2">
-            </a>
-                    
-            <a href="">
-                <img src="" id="Amodel3">
-            </a>
-                    
-            <a href="">
-                <img src=""  id="Amodel4">
-            </a>
-                   
-            <a href="">
-                <img src=" "  id="Amodel5">
+                <img src="/images/Retour.png" onclick="Retour()" id="" alt="Retour">
             </a>
         </div>
 
-        <div class="models" id="Huaweimodels">
-            <a href="#choixmarques">
-                <img src="/images/Retour.png" onclick="Retour()" id="RetourH" alt="Retour">
-            </a>
-                    
-            <a href="">
-                <img src="" id="Hmodel1">
-            </a>
-                   
-            <a href="">
-                <img src="" id="Hmodel2">
-            </a>
-                   
-            <a href="">
-                <img src="" id="Hmodel3">
-            </a>
+        <template id="modeles">
+            <section>
+            <div class="{{marque}}">
+                <a href="{{lien}}">
+                    <img src="/images/{{image}}.jpg" id="{{id}}" alt="{{name}}">
+                </a>
+            </div>
+            </section>
+        </template>
 
-            <a href="">
-                <img src="" id="Hmodel4">
-            </a>
-                    
-            <a href="">
-                <img src="" id="Hmodel5">
-            </a>
-                
-        </div>
 
-        <div class="models" id="Samsungmodels">
-            <a href="#choixmarques">
-                <img src="/images/Retour.png" onclick="Retour()" id="RetourS" alt="Retour">
-            </a>
-                    
-            <a href="">
-                <img src="" alt="Smodel1">
-            </a>
-                    
-            <a href="">
-                <img src="" alt="Smodel2">
-            </a>
-                    
-            <a href="">
-                <img src="" alt="Smodel3">
-            </a>
-                    
-            <a href="">
-                <img src="" alt="Smodel4">
-            </a>
-                    
-            <a href="">
-                <img src="" alt="Smodel5">
-            </a>
-        </div>-->
-    
-        </section>
         
         <footer id="footer"></footer>
 
     </body>
-
-    <script src='template.js'></script>
-
-
-
 
 
     </html>
