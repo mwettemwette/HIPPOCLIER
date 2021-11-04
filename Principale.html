@@ -21,12 +21,12 @@
         <h1 id="choix">Choisissez la marque de votre téléphone</h1>
         <div id="grillemarques">
             <template id="marques">
-                <div>
-                    <a href="javascript:nomfonction({{name}})"> <!--Mdr faut faire la fonction JS gros teubé-->
-                    <img src="/images/{{image}}.jpg"  id="{{id}}" alt="{{name}}">
-                    </a>
-                    <p>A partir de {{prix}} €</p>
-                </div>
+                <a href="javascript:nomfonction({{name}})"> <!--Mdr faut faire la fonction JS gros teubé-->
+                    <div>
+                        <img src="/images/{{image}}.jpg"  id="{{id}}" alt="{{name}}" width=620vw height=620vh>
+                        <p class="prix">A partir de {{prix}} €</p>
+                    </div>
+                </a>
             </template>
         </div>
 

@@ -9,10 +9,13 @@ header{
     font-size: 5vh;
 }
 
+h1{
+  margin-top: 10vh;
+}
+
 .titre{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 
 .navbar{
     background-color: white;
@@ -37,7 +40,7 @@ ul{
 
 
 footer{
-  display:;
+  text-align: center;
 }
 
 /*Style pour la page Principale uniquement*/
@@ -56,10 +59,16 @@ footer{
   flex-shrink: 3;
 }
 
-#grillemarques > div{
+#grillemarques > a > div{
   width: 32vw;
 }
 
+#grillemarques > a > div >.prix{
+  position: absolute;
+  bottom: 25vh;
+
+  font-size: 20pt;
+}
 
 .Retour{
 
