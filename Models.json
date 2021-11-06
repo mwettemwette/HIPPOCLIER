@@ -28,7 +28,7 @@
             "prix": 0,
             "id" : 0,
             "image" : "Retour",
-            "lien" : "Principale.html#grillemarques"
+            "lien" : "javascript:Retour()"
         },
         {
             "name" : "Amodel1",

@@ -19,33 +19,32 @@
 
         <!--faut mettre un bandeau avec les marques et le faire aller sur les images qui défilent au dessus avec un z index +1 lel-->
         <h1 id="choix">Choisissez la marque de votre téléphone</h1>
-        <div id="grillemarques">
-            <template id="marques">
-                <a href="javascript:nomfonction({{name}})"> <!--Mdr faut faire la fonction JS gros teubé-->
-                    <div>
-                        <img src="/images/{{image}}.jpg"  id="{{id}}" alt="{{name}}" width=620vw height=620vh>
-                        <p class="prix">A partir de {{prix}} €</p>
-                    </div>
+        
+        <template id="marques">
+            <div>
+                    <img src="/images/{{image}}.jpg" onclick="javascript:waw('{{name}}')" id="{{id}}" alt="{{name}}" width=620vw height=620vh>
+                    <p class="prix">A partir de {{prix}} €</p>
+            </div>
+        </template>
+
+        <template id="modeles">
+            <div>
+            <div class="{{marque}}">
+                <a href="{{lien}}">
+                    <img src="/images/{{image}}.jpg" id="{{id}}" alt="{{name}}">
                 </a>
-            </template>
-        </div>
+            </div>
+            </div>
+        </template>
 
+        <div id="grillemarques"></div>
     
-        <div id="grillemodels">
-            <template id="modeles">
-                <div class="{{marque}}">
-                    <a href="{{lien}}">
-                        <img src="/images/{{image}}.jpg" id="{{id}}" alt="{{name}}">
-                    </a>
-                </div>
-            </template>
-        </div>
+        <div id="grillemodels"></div>
 
-        
-        
-
+        <footer id="footer"></footer>
+    
     </body>
 
-    <footer id="footer"></footer>
+
 
     </html>
