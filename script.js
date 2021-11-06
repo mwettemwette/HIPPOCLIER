@@ -60,14 +60,23 @@ function calculDate(date1) {
 /* Script pour la page Contact */
 
 
-  function showElement() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+  function toggleElement(bouton) {
+    document.querySelectorAll("[data-num]").forEach(function(el) {
+      el.style.display = 'none'
+    })
+
+   let div = document.querySelector("[data-num='" + bouton.dataset.numbtn + "']")
+   div.style.display = 'block'
+  
+    // var x = document.getElementById("myDIV");
+    // if (x.style.display === "none") {
+    //   x.style.display = "block";
+    // } else {
+    //   x.style.display = "none";
+    // }
   }
+
+
 
 /* Script pour la page Contenu de la commande*/
 
@@ -78,3 +87,5 @@ function calculDate(date1) {
 
 
 /* Script pour la page Personnalisation */
+
+toggleElement();

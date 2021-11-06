@@ -22,15 +22,32 @@
                 <p style= "font-size: large;">Ainsi, notre équipe se forme en 2018 à Arcachon pour commencer à vendre à l'échelle 
                     nationale puis dans toute l'Union Européenne en 2021. <br>
                 Toutes les coques Hippoclier sont fabriquées en France.</p>
-                <h3>FAQ - Réponses aux questions réccurentes</h3>
-                <button type="button" onclick="showElement()">Comment annuler ma commande?</button>
-                <div id="myDIV">
-                This is my DIV element.
+
+                <h3>Où nous retrouver?</h3>
+
+                <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCfohSBF8EuXri2Vsh6QSsiJzFYJQYAtbM
+    &q=Space+Needle,Paris+WA">
+</iframe>
+
+                <h4>FAQ - Réponses aux questions réccurentes</h4>
+                <button type="button" onclick="toggleElement(this)" data-numbtn="1">Comment annuler ma commande?</button>
+                <div id="reponse1" data-num="1">
+                reponse1
                 </div>
 
-                <button type="button" onclick="showElement()">Comment retourner ma commande et obtenir un remboursement?</button>
-                
-                    
+                <button type="button" onclick="toggleElement(this)"data-numbtn="2">Comment retourner ma commande et obtenir un remboursement?</button>
+                <div id="reponse2" data-num="2"></div>
+                reponse 2
+
+                <button type="button" onclick="toggleElement(this)" data-numbtn="3">Comment sont calculés les frais de livraison?</button>
+                <div id="reponse3" data-num="3"></div>
+                reponse 3
                 <p style="font-size:large;"></p>
 
             </section, id=s1>
@@ -39,7 +56,7 @@
         <h1>Contactez-nous!</h1> <br> <br>
 
         <p style="font-size: large;">Si vous avez une question auquelle la FAQ ne répond pas ou concernant votre commande, l'équipe Hippoclier fera tout pour y répondre dans les <br> plus brefs délais.</p>
-<fieldset style="width: 90%">
+<fieldset style="width: 90%", id="formulaire de contact">
     <legend style="font-size: 150%;">Formulaire de contact</legend>
         <form action="/commande.php">
             <label for="prenom">Prénom:</label>
@@ -80,9 +97,10 @@
 
 </div>
 
-    <footer id="footer"></footer>
     <script defer src="script.js">
+        <footer id="footer"></footer>
     </body>
 
 
 </html>
+

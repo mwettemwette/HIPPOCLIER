@@ -37,9 +37,11 @@ ul{
 
 
 footer{
-    position: fixed;
-    bottom: 0;
-    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(211, 209, 209);
+    color: white;
 }
 
 /*Style pour la page Principale uniquement*/
@@ -104,6 +106,14 @@ footer{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+}
+
+.reponse {
+  display: none
+}
+
+.reponseouverte{
+  display: block
 }
 
 /* Position the "next button" to the right */
