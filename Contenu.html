@@ -4,34 +4,39 @@
         <head>
             <title>Votre commande</title>
             <meta charset="UTF-8">
-            <link rel="stylesheet" href="styles.css">
+            <link rel='stylesheet' href="styles.css">
+            <script src='script.js' defer></script>
         </head>
 
         <body>
             <header id="header"></header>
 
-            <div class="grille">
-                <section></section>
-                <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section>
+            <div class="grillecontenu">
+    
+            <section id="Panier">
                 <!--récap du panier avec les images-->
                 <h1>Votre panier</h1>
-
+                <template id="article">
+                    <div class="{{name}}">
+                        <img src="/images/{{image}}.jpg" alt="img {{name}}">
+                        <p>{{name}}</p>
+                    </div>
+                </template>
 
             </section>
-            
-            <section></section>
-            <section>
+
+            <section id="Detail">
                 <!--récap du panier-->
-                <h1>Détail panier</h1>
+                    <h1>Détail panier</h1>
+                    <template id="detailarticle">
+                        <div class="{{name}}">
+                            <p calculprix({{nombre}},{{prix}})> </p>
 
+
+                        </div>
+                    </template>
             </section>
-            <section></section>
-            <section></section>
+
             <section>
                 <!--info livraison-->
                 <h1>Informations livraison</h1>
@@ -62,7 +67,7 @@
                     <input type="text" id="comp" name="comp" ><br><br>
 
                     <label for="liv">Date de livraison :</label>
-                    <input type="date" id="liv" name="liv" onchange="calculDate(this.value)" required><br><br>
+                    <input type="date" id="liv" name="liv" onchange="calculDate(this.value)" min="" required><br><br>
 
                     <label for="promo">Code promo :</label>
                     <input type="text" id="promo" name="promo"><br><br>
@@ -76,8 +81,6 @@
                 <!--date de livraison + calcul prix si express (72h) ou pas-->
                 
             </section>
-
-            <section></section>
 
             <section>
                 <!--prix total-->
@@ -95,12 +98,11 @@
                 <button type="button" onclick="alert('Merci pour votre commande !')">Payer</button>
                 <br> <a href="https://bit.ly/2VYkGPX">Régler votre commande</a>
             </section>
-            <section></section>
             </div>
 
             <footer id="footer"></footer>
         </body>
 
-        <script src="script.js"></script>
+
 
     </html>

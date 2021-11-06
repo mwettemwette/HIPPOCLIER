@@ -4,30 +4,38 @@
         {
             "name" : "Apple",
             "id" : 1,
-            "image" : "apple.jpg",
+            "image" : "Apple",
             "prix" : 30
         },
         
         {
             "name" : "Huawei",
             "id" : 2,
-            "image" : "huawei.jpg",
-            "prix" : 25 
+            "image" : "Huawei",
+            "prix" : 25
         },
         {
             "name" : "Samsung",
             "id" : 3,
-            "image" : "samsung.jpg",
+            "image" : "Samsung",
             "prix" : 20
         }
     ],
     "models" :[
         {
+            "name" : "Retour",
+            "marque":"Retour",
+            "prix": 0,
+            "id" : 0,
+            "image" : "Retour",
+            "lien" : "javascript:Retour()"
+        },
+        {
             "name" : "Amodel1",
             "prix" : 30,
             "marque" : "Apple",
             "id" : 1001,
-            "image" : "amodel1.jpg",
+            "image" : "amodel1",
             "lien" : "personnalisation.html?id=1001"
         },
         {
@@ -35,7 +43,7 @@
             "prix" : 30,
             "marque" : "Apple",
             "id" : 1002,
-            "image" : "amodel2.jpg",
+            "image" : "amodel2",
             "lien" : "personnalisation.html?id=1002"
         },
         {
@@ -43,7 +51,7 @@
             "prix" : 30,
             "marque" : "Apple",
             "id" : 1003,
-            "image" : "amodel3.jpg",
+            "image" : "amodel3",
             "lien" : "personnalisation.html?id=1003"
         },
         {
@@ -51,7 +59,7 @@
             "prix" : 30,
             "marque" : "Apple",
             "id" : 1004,
-            "image" : "amodel4.jpg",
+            "image" : "amodel4",
             "lien" : "personnalisation.html?id=1004"
         },
         {
@@ -59,7 +67,7 @@
             "prix" : 30,
             "marque" : "Apple",
             "id" : 1005,
-            "image" : "amodel5.jpg",
+            "image" : "amodel5",
             "lien" : "personnalisation.html?id=1005"
         },
         {
@@ -67,7 +75,7 @@
             "prix" : 25,
             "marque" : "Huawei",
             "id" : 2001,
-            "image" : "hmodel1.jpg",
+            "image" : "hmodel1",
             "lien" : "personnalisation.html?id=2001"
         },
         {
@@ -75,7 +83,7 @@
             "prix" : 25,
             "marque" : "Huawei",
             "id" : 2002,
-            "image" : "hmodel2.jpg",
+            "image" : "hmodel2",
             "lien" : "personnalisation.html?id=2002"
         },
         {
@@ -83,7 +91,7 @@
             "prix" : 25,
             "marque" : "Huawei",
             "id" : 2003,
-            "image" : "hmodel3.jpg",
+            "image" : "hmodel3",
             "lien" : "personnalisation.html?id=2003"
         },
         {
@@ -91,7 +99,7 @@
             "prix" : 25,
             "marque" : "Huawei",
             "id" : 2004,
-            "image" : "hmodel4.jpg",
+            "image" : "hmodel4",
             "lien" : "personnalisation.html?id=2004"
         },
         {
@@ -99,7 +107,7 @@
             "prix" : 25,
             "marque" : "Huawei",
             "id" : 2005,
-            "image" : "hmodel5.jpg",
+            "image" : "hmodel5",
             "lien" : "personnalisation.html?id=2005"
         },
         {
@@ -107,7 +115,7 @@
             "prix" : 20,
             "marque" : "Samsung",
             "id" : 3001,
-            "image" : "smodel1.jpg",
+            "image" : "smodel1",
             "lien" : "personnalisation.html?id=3001"
         },
         {
@@ -115,7 +123,7 @@
             "prix" : 20,
             "marque" : "Samsung",
             "id" : 3002,
-            "image" : "smodel2.jpg",
+            "image" : "smodel2",
             "lien" : "personnalisation.html?id=3002"
         },
         {
@@ -123,7 +131,7 @@
             "prix" : 20,
             "marque" : "Samsung",
             "id" : 3003,
-            "image" : "smodel3.jpg",
+            "image" : "smodel3",
             "lien" : "personnalisation.html?id=3003"
         },
         {
@@ -131,7 +139,7 @@
             "prix" : 20,
             "marque" : "Samsung",
             "id" : 3004,
-            "image" : "smodel4.jpg",
+            "image" : "smodel4",
             "lien" : "personnalisation.html?id=3004"
         },
         {
@@ -139,7 +147,7 @@
             "prix" : 20,
             "marque" : "Samsung",
             "id" : 3005,
-            "image" : "smodel5.jpg",
+            "image" : "smodel5",
             "lien" : "personnalisation.html?id=3005"
         }
     ],
@@ -163,6 +171,35 @@
             "code" : "CPE",
             "réduction" : 5,
             "pourcentage" : 0
+        }
+    ],
+    "Paniertest" : [
+        {
+            "name" : "Smodel5",
+            "prix" : 20,
+            "marque" : "Samsung",
+            "id" : 3005,
+            "image" : "smodel5",
+            "lien" : "personnalisation.html?id=3005",
+            "nombre" : 3
+        },
+        {
+            "name" : "Hmodel5",
+            "prix" : 25,
+            "marque" : "Huawei",
+            "id" : 2005,
+            "image" : "hmodel5",
+            "lien" : "personnalisation.html?id=2005",
+            "nombre" : 1
+        },
+        {
+            "name" : "Amodel1",
+            "prix" : 30,
+            "marque" : "Apple",
+            "id" : 1001,
+            "image" : "amodel1",
+            "lien" : "personnalisation.html?id=1001",
+            "nombre" : 4
         }
     ]
 }
