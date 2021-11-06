@@ -40,16 +40,11 @@ ul{
 
 
 footer{
-<<<<<<< HEAD
     width: 100%;
     text-align: center;
     padding: 3px;
     background-color: rgb(211, 209, 209);
     color: white;
-=======
-  text-align: center;
-  display: block;
->>>>>>> 939b80ab7a87d60e9132fc215bf00291f221dc13
 }
 
 /*Style pour la page Principale uniquement*/
@@ -206,13 +201,13 @@ footer{
 
 /*Style pour la page Contenu de la commande uniquement*/
 
-.grillecontenu{
+#grillecontenu{
     display: grid;
     grid-template-columns: 58vw 38vw ;
     grid-template-rows: 40vh 40vh;
 }
 
-.grillecontenu > section{
+#grillecontenu > section{
   margin-left: 7vw;
   margin-right: 7vw;
 }
@@ -226,15 +221,24 @@ input{
   margin-right: 3vw;
 }
 
+#Panier{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button{
+  margin-right: 10px;
+  border-radius: 20px ;
+  width: 20px;
+}
+
 #valider{
     display: flex;
     justify-content: space-evenly;
     margin-top: 10px;
 }
 
-#PrixPanier{
-    color:  #e3eaea;
-}
 
 /*Style pour la page A propos Contact*/
 

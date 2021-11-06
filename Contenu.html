@@ -11,66 +11,67 @@
         <body>
             <header id="header"></header>
 
-            <div class="grillecontenu">
-    
-            <section id="Panier">
-                <!--récap du panier avec les images-->
+            <template id="article">
+                <div>
+                <div class="{{name}}">
+                    <img src="/images/{{image}}.jpg" alt="img {{name}}">
+                    <p>{{name}}</p>
+                </div></div>
+            </template>
+
+            <template id="detailarticle">
+                <div>
+                <div class="{{name}}">
+                    <p><span id="buttons"><button type="button" class="button" onclick="" > + </button>
+                    <button type="button" class="button" onclick=""> - </button></span>
+                    {{name}} x {{nombre}} : {{result}} € </p>
+                </div></div>
+            </template>
+
+            <div id="grillecontenu">
+            <section>
                 <h1>Votre panier</h1>
-                <template id="article">
-                    <div class="{{name}}">
-                        <img src="/images/{{image}}.jpg" alt="img {{name}}">
-                        <p>{{name}}</p>
-                    </div>
-                </template>
-
-            </section>
-
-            <section id="Detail">
-                <!--récap du panier-->
-                    <h1>Détail panier</h1>
-                    <template id="detailarticle">
-                        <div class="{{name}}">
-                            <p calculprix({{nombre}},{{prix}})> </p>
-
-
-                        </div>
-                    </template>
+                <div id="Panier">
+                </div>
             </section>
 
             <section>
-                <!--info livraison-->
-                <h1>Informations livraison</h1>
+                <h1>Détail panier</h1>
+                <div id="Detail"></div>     
+            </section>
 
+            <section>
+                <h1>Informations livraison</h1>
                 <form action="oui">
                     <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" required><br><br>
+                    <input type="text" id="prenom" name="prenom" required><br>
 
                     <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom"required><br><br>
+                    <input type="text" id="nom" name="nom"required><br>
 
                     <label for="email">Adresse mail :</label>
-                    <input type="email" id="mail" name="mail" required><br><br>
+                    <input type="email" id="mail" name="mail" required><br>
 
                     <label for="tel">Numéro de téléphone :</label>
-                    <input type="text" maxlength="10" id="tel" name="tel" required><br><br>
+                    <input type="text" maxlength="10" id="tel" name="tel" required><br>
                     
                     <label for="adresse">Adresse (n°, rue) :</label>
-                    <input type="email" id="adresse" name="adresse" required><br><br>
+                    <input type="email" id="adresse" name="adresse" required><br>
 
                     <label for="cp">Code Postal :</label>
-                    <input type="text" maxlength="5" id="cp" name="cp"required><br><br>
+                    <input type="text" maxlength="5" id="cp" name="cp"required><br>
 
                     <label for="ville">Ville :</label>
-                    <input type="text" id="ville" name="ville" required><br><br>
+                    <input type="text" id="ville" name="ville" required><br>
 
                     <label for="comp">Informations complémentaires :</label>
-                    <input type="text" id="comp" name="comp" ><br><br>
+                    <input type="text" id="comp" name="comp" ><br>
 
                     <label for="liv">Date de livraison :</label>
-                    <input type="date" id="liv" name="liv" onchange="calculDate(this.value)" min="" required><br><br>
+                    <input type="date" id="liv" name="liv" onchange="calculDate(this.value)" min="" required><br>
 
                     <label for="promo">Code promo :</label>
-                    <input type="text" id="promo" name="promo"><br><br>
+                    <input type="text" id="promo" name="promo"><br>
 
                     <div id="valider">
                         <input type="submit" value="Valider">
@@ -79,30 +80,23 @@
 
                 </form>
                 <!--date de livraison + calcul prix si express (72h) ou pas-->
-                
             </section>
 
-            <section>
-                <!--prix total-->
+            <section id="LesPrix">
                 <h1>Récapitulatif de la commande</h1>
-                <p>Panier :
-                    <input type="text" name="PrixPanier" id="PrixPanier" readonly>
-                </p>
-                <p>Livraison :
-                    <input type="text" name="PrixLiv" id="PrixLiv" readonly> 
-                </p>
-                <p>Total :
-                    <input type="text" name="Total" id="Total" readonly>
-                </p> 
                 
-                <button type="button" onclick="alert('Merci pour votre commande !')">Payer</button>
+                <p>Panier : <span id="PrixPanier" onload="calculPrixPanier()"></span> €</p>
+                
+                <p>Livraison : <span id="PrixLiv"></span> €</p>
+
+                <p>Total : <span id="PrixTotal"></span> €</p> 
+                
+                <button type="button" onclick="calculPrixPanier()">Payer</button>
                 <br> <a href="https://bit.ly/2VYkGPX">Régler votre commande</a>
             </section>
             </div>
 
             <footer id="footer"></footer>
         </body>
-
-
 
     </html>
