@@ -1,3 +1,32 @@
+fetch("header.html") //ok
+.then(contenu => contenu.text())
+.then(texte => {
+    document.getElementById("header").innerHTML = texte;
+})
+
+fetch("footer.html") //ok
+.then(contenu => contenu.text())
+.then(texte => {
+    document.getElementById("footer").innerHTML = texte;
+})
+
+var mybutton = document.getElementById("fleche");  //ok 
+window.onscroll = function() {popfleche()};
+
+function popfleche() { //ok
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function Monter() { //ok
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
 let contenu_models={};
 let contenu_marques={};
 let contenu_promo={};
@@ -96,6 +125,8 @@ function showSlides(n) {
   }
 }
 */
+
+
 
 /* Script pour la page Personnalisation */
 
