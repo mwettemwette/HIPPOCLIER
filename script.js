@@ -294,7 +294,6 @@ function toggleElement(bouton) {
 
 
 
-/* Script pour la page Personnalisation */
 
 /*
 const input = document.querySelector('input');

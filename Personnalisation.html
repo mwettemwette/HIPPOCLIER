@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>HIPPOCLIER</title>
+        <title>Personnalisation</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css" >
-        <script src='script.js' defer></script>
+        <script src='template.js' defer></script>
     </head>
 
 <body>
       
     <header id="header"></header>
 
- <input placeholder="Entrez votre phrase personnalisé" name="name"/>
-<p id="texte"></p>
+    <main>
 
+    <div class="perso1">
+       <div class="canva"></div>
+            <canvas id="apple" width="512" height="512" 
+            style="background: url(url) no-repeat center center; 
+            border:10px solid #000000;">
+            </canvas
+ 
 
-<canvas id="tools_sketch" width="512" height="512" 
-        style="background: url(Apple.jpg) no-repeat center center; 
-        border:10px solid #000000;">
-</canvas
-
+        <div class="choix2"></div>
+            <fieldset style="width: 40%", id="choix2">
+            <legend>Personnalise ta coque</legend>
+        <p>Inscriptions au centre de la coque</p>
+        <input placeholder="text" name="name"/>
+        <p id="log"></p>
+            </fieldset>
+        </section>
+    </div>
+</main>
 </body>
     
 </html>
