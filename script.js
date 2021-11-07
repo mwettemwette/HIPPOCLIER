@@ -1,21 +1,21 @@
 /* Script pour toutes les pages */
 
-fetch("header.html")
+fetch("header.html") //ok
 .then(contenu => contenu.text())
 .then(texte => {
     document.getElementById("header").innerHTML = texte;
 })
 
-fetch("footer.html")
+fetch("footer.html") //ok
 .then(contenu => contenu.text())
 .then(texte => {
     document.getElementById("footer").innerHTML = texte;
 })
 
-var mybutton = document.getElementById("fleche");
-window.onscroll = function() {abracadabra()};
+var mybutton = document.getElementById("fleche");  //ok 
+window.onscroll = function() {popfleche()};
 
-function abracadabra() {
+function popfleche() { //ok
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
@@ -23,7 +23,7 @@ function abracadabra() {
   }
 }
 
-function Monter() {
+function Monter() { //ok
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
@@ -139,8 +139,30 @@ function Retour(){
 
 /* Script pour la page Contenu de la commande*/
 
+var PrixPanier =0 , PrixLiv =0 , PrixTotal=0, PrixExp =0;
+x = document.getElementById('PrixPanier');
+x.innerHTML = PrixPanier;
+y = document.getElementById('PrixLiv');
+y.innerHTML = PrixLiv;
+z = document.getElementById('PrixTotal');
+z.innerHTML = PrixTotal;
+
+fetch('Models.json')
+.then(function(response){
+    return response.json();})
+.then(function(json){
+    let contenu_panier=json["Paniertest"];
+    let PrixPanier=0;
+    if (contenu_panier != null){
+      for(const i of contenu_panier){
+        PrixPanier = PrixPanier + calculprix(i.nombre,i.prix);}
+      x = document.getElementById('PrixPanier')
+      x.innerHTML = PrixPanier;
+}})
+
 function calculDate(date1) {
   valRen = false;
+  PrixExp = 0;
   date2f = new Date();
   date2 = date2f.toISOString().split("T")[0];
   date1 = date1.split("-");
@@ -149,10 +171,13 @@ function calculDate(date1) {
     if(parseInt(date1[1]) <= parseInt(date2[1])){
       if(Math.abs(parseInt(date2[2]) - parseInt(date1[2])) <= 3){
         valRen = true;
-      }
-    }
-  }
-  return valRen;
+        PrixExp = 8;}
+  x = document.getElementById('PrixLiv');
+  x.innerHTML = PrixLiv + PrixExp;
+}}}
+
+function calculPrixLiv(adresse){
+  
 }
 /* Script pour la page Contact */
 
@@ -161,19 +186,60 @@ function calculprix(nbr,prix){
   return result;
 }
 
-function calculPrixPanier(){
-  fetch('Models.json')
-  .then(function(response){
-      return response.json();})
-  .then(function(json){
-      let contenu_panier=json["Paniertest"];
-      let PrixPanier=0;
-      if (contenu_panier != null){
-        for(const i of contenu_panier){
-          PrixPanier = PrixPanier + calculprix(i.nombre,i.prix);
-          console.log(PrixPanier)}
-        document.getElementById('PrixPanier').append(PrixPanier)}
-})}
+var placeSearch, autocomplete;
+var componentForm = {
+  adresse: 'long_name',
+  ville: 'long_name',
+  cp: 'short_name'
+};
+
+function initAutocomplete() {
+  // Create the autocomplete object, restricting the search to geographical
+  // location types.
+  autocomplete = new google.maps.places.Autocomplete(
+      /** @type {!HTMLInputElement} */(document.getElementById('adresse')),
+      {types: ['geocode']});
+  // When the user selects an address from the dropdown, populate the address
+  // fields in the form.
+  autocomplete.addListener('place_changed', fillInAddress());
+}
+
+function fillInAddress() {
+  // Get the place details from the autocomplete object.
+  var place = autocomplete.getPlace();
+  for (var component in componentForm) {
+    document.getElementById(component).value = '';}
+  // Get each component of the address from the place details
+  // and fill the corresponding field on the form.
+  for (var i = 0; i < place.address_components.length; i++) {
+    var addressType = place.address_components[i].types[0];
+    if (componentForm[addressType]) {
+      var val = place.address_components[i][componentForm[addressType]];
+      document.getElementById(addressType).value = val;
+      console.log(addressType)
+    }
+  }
+}
+
+// Bias the autocomplete object to the user's geographical location,
+// as supplied by the browser's 'navigator.geolocation' object.
+function geolocalisation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var geolocation = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+      console.log(geolocation)
+      var circle = new google.maps.Circle({
+        center: geolocation,
+        radius: position.coords.accuracy
+      });
+      autocomplete.setBounds(circle.getBounds());
+    });
+  }
+}
+
 
 /* Script pour la page Contact */
 
