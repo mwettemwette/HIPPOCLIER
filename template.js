@@ -132,9 +132,10 @@ function showSlides(n) {
 
 
 const input = document.querySelector('input');
-const texte = document.getElementById('texte');
+const log = document.getElementById('log');
 
 input.addEventListener('change', updateValue);
 
 function updateValue(e) {
-  texte.textContent = e.target.value;
+  log.textContent = e.target.value;
+}
