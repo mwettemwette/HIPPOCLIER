@@ -153,17 +153,17 @@
     ],
     "Code Promo" : [
         {
-            "code" : "Momo",
+            "code" : "MOMO",
             "réduction" : 50,
             "pourcentage" : 0
         },
         {
-            "code" : "Roger",
+            "code" : "ROGER",
             "réduction" : 0,
             "pourcentage" : 70
         },
         {
-            "code" : "Cacundefinedophonie",
+            "code" : "CACOPHONIE",
             "réduction" : 0,
             "pourcentage" : 50
         },
@@ -181,7 +181,7 @@
             "id" : 3005,
             "image" : "smodel5",
             "lien" : "personnalisation.html?id=3005",
-            "nombre" : 3
+            "nombre" : 4
         },
         {
             "name" : "Hmodel5",
