@@ -136,7 +136,6 @@ function calculDate(date1) {
     }
     return valRen;
 }
-<<<<<<< HEAD
 /* Script pour la page Contact */
 
 
@@ -163,11 +162,17 @@ function calculDate(date1) {
 
 
 
-=======
->>>>>>> 939b80ab7a87d60e9132fc215bf00291f221dc13
 
 
 
 /* Script pour la page Personnalisation */
 
-toggleElement();
+
+const input = document.querySelector('input');
+const texte = document.getElementById('texte');
+
+input.addEventListener('change', updateValue);
+
+function updateValue(e) {
+  texte.textContent = e.target.value;
+}
