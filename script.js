@@ -154,10 +154,7 @@ function calculDate(date1) {
   }
   return valRen;
 }
-<<<<<<< HEAD
 /* Script pour la page Contact */
-=======
->>>>>>> 266e78b069ff5a2947b619b40abd14456ccaef41
 
 function calculprix(nbr,prix){
   let result = nbr * prix;
@@ -207,14 +204,4 @@ function toggleElement(bouton) {
 
 
 
-/* Script pour la page Personnalisation */
 
-
-const input = document.querySelector('input');
-const texte = document.getElementById('texte');
-
-input.addEventListener('change', updateValue);
-
-function updateValue(e) {
-  texte.textContent = e.target.value;
-}

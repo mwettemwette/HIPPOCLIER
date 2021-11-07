@@ -96,3 +96,14 @@ function showSlides(n) {
   }
 }
 */
+
+/* Script pour la page Personnalisation */
+
+
+const input = document.querySelector('input');
+const texte = document.getElementById('texte');
+
+input.addEventListener('change', updateValue);
+
+function updateValue(e) {
+  texte.textContent = e.target.value;
