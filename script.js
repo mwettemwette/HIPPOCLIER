@@ -12,6 +12,22 @@ fetch("footer.html")
     document.getElementById("footer").innerHTML = texte;
 })
 
+var mybutton = document.getElementById("fleche");
+window.onscroll = function() {abracadabra()};
+
+function abracadabra() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function Monter() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 /* Script pour la page Principale (peut être réutilisé)*/
 
 let contenu_models={};

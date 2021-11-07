@@ -47,6 +47,16 @@ footer{
     color: white;
 }
 
+#fleche {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  width: 100px;
+  height: 100px;
+  box-sizing: content-box ;
+}
 /*Style pour la page Principale uniquement*/
 
 #Fond{
