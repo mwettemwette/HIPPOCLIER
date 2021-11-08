@@ -176,6 +176,7 @@ function Retour(){
 
 
 /* Script pour la page Contenu de la commande*/
+
 var Reduc=0, PrixLiv=0, PrixPanier=0, PrixTotal=0,PrixFinal=0,PrixExp=0;
 if(Reduc!=0){
   var x = document.getElementById('promotion');
@@ -322,17 +323,6 @@ function calculPrixLiv(distance){
    }
 }
 
-
-
-/* Script pour la page Contenu de la commande*/
-
-
-
-
-
-
-
-
 /*
 const input = document.querySelector('input');
 const texte = document.getElementById('texte');
@@ -342,3 +332,54 @@ input.addEventListener('change', updateValue);
 function updateValue(e) {
   texte.textContent = e.target.value;
 }*/
+
+/* Script pour la page Personnalisation*/
+
+
+fetch('Models.json')
+.then(function(response){
+  return response.json();
+})
+.then(function(json){
+  let contenu_models=json["models"];
+  var k = 0;
+  let idd = new URLSearchParams(window.location.search).get('id') ;
+  console.log(idd)
+  for(const p of contenu_models){
+    if(p["id"] == idd ){
+      console.log(p)
+      let dimtel = p.dimtel.split(',');
+      console.log(dimtel)
+      let dimtrou = p.dimtrou.split(',');
+      console.log(dimtrou)
+        var test = document.getElementById('canvas');
+        var context = test.getContext('2d');
+
+        context.beginPath();
+        context.fillStyle = "black";
+        context.lineTo(600,0);
+        context.lineTo(600,600);
+        context.lineTo(0,600);
+        context.lineTo(0,0);
+        context.fill();
+        context.stroke();
+
+        context.clearRect(dimtel[0],dimtel[1],dimtel[2],dimtel[3]);
+
+        context.beginPath();
+        context.fillStyle ="black";
+        context.arc(dimtrou[0],dimtrou[1],25,Math.PI,1.5 * Math.PI);
+        context.lineTo(225,100);
+        context.arc(dimtrou[2],dimtrou[1],25,1.5 * Math.PI,0);
+        context.lineTo(275,175);
+        context.arc(dimtrou[2],dimtrou[3],25,0,0.5*Math.PI);
+        context.lineTo(200,225);
+        context.arc(dimtrou[0],dimtrou[3],25,0.5*Math.PI, Math.PI);
+        context.lineTo(150,125);
+        context.fill();
+        context.stroke();
+}}})
+
+
+
+
