@@ -5,32 +5,73 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css" >
         <script src='template.js' defer></script>
+        <script src='script.js' ></script>
     </head>
-
-<body>
+<main>
+<body onload="prixItem()">
       
     <header id="header"></header>
 
-    <main>
+    <h1 id=perso>Personnalise ta coque</h1>
 
     <div class="perso1">
-       <div class="canva"></div>
-            <canvas id="apple" width="512" height="512" 
+       <div class="canva">
+            <canvas id="apple" width="600" height="600  " 
             style="background: url(url) no-repeat center center; 
             border:10px solid #000000;">
-            </canvas
+            </canvas>
+            </div>
  
 
-        <div class="choix2"></div>
-            <fieldset style="width: 40%", id="choix2">
-            <legend>Personnalise ta coque</legend>
+        <div class="choix2">
+            <fieldset id="choix2">
+            <legend id="persocoque">Personnalise ta coque de {{name}}</legend>
         <p>Inscriptions au centre de la coque</p>
-        <input placeholder="text" name="name"/>
+        <input placeholder="text" id="TextePerso"/>
         <p id="log"></p>
+
+        <p>Couleur</p>
+
+            <button class="button" id="vert" ></button>
+            <button class="button button2" id="bleu" ></button>
+            <button class="button button3" id="rouge" ></button>
+            <button class="button button4" id="gris" ></button>
+            <button class="button button5" id="noir" ></button>
+
+    <p>Niveau de solidité</p>
+            <select name="solidité" id='solid'onchange="prixItem()">
+                <option value="maximale">Maximale: acier trempé</option>
+                <option value="élevé"> Elevé: Inox</option>
+                <option value="basique">Basique: plastique solidifié</option>  
+            </select>
+<!-- <div>
+  <input type="radio" id="maximale" name="solidité" value="maximale" checked>
+  <label for="maximale">Maximale: acier trempé</label>
+</div>
+
+<div>
+  <input type="radio" id="élevé" name="solidité" value="élevé">
+  <label for="élevé">Elevé: Inox </label>
+</div>
+
+<div>
+  <input type="radio" id="basique" name="solidité" value="basique">
+  <label for="basique">Basique: plastique solidifié</label>
+</div> -->
+
+<br><br><label>Nombre d'articles similaire désiré</label>
+<input id= "qte" type="number" value= 1 min=1 onchange="prixItem()">
+
+<br><br><p>Prix:<span id="PrixArticle"></span>€</p>
+<button class="Panier"><a href="Contenu.html">Ajouter au panier</a></button>
+        
             </fieldset>
-        </section>
+        </div>>
     </div>
 </main>
+
+
+
 </body>
     
 </html>

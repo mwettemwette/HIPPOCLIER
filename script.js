@@ -23,6 +23,44 @@ function popfleche() { //ok
   }
 }
 
+function prixItem(){
+  let id_item = new URLSearchParams(window.location.search).get("id")
+  let quantité = document.getElementById("qte").value;
+  var code= id_item.charAt(0);
+  let solidité = document.getElementById("solid").value;
+  if (solidité == "maximale") {
+    supp= 10;
+  }
+  else if (solidité == "élevé") {
+    supp = 5;
+  }
+  else {
+    supp = 0;
+  }
+
+  if (code == '1') {
+    prixUnite = 30;
+  }
+  else if (code == '2') {
+    prixUnite = 25;
+  }
+  else {
+    prixUnite = 20;
+  }
+  let prixFinal = (prixUnite + supp)*quantité
+  document.getElementById("PrixArticle").innerHTML = prixFinal
+}
+
+
+
+
+
+
+
+
+
+
+
 function Monter() { //ok
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -267,8 +305,8 @@ function calculPrixLiv(distance){
 
 /* Script pour la page Contact */
 
-/*
-function toggleElement(bouton) {
+
+/*function toggleElement(bouton) {
   document.querySelectorAll("[data-num]").forEach(function(el) {
     el.style.display = 'none'
   })
@@ -276,15 +314,15 @@ function toggleElement(bouton) {
   let div = document.querySelector("[data-num='" + bouton.dataset.numbtn + "']")
   div.style.display = 'block'
 
-  // var x = document.getElementById("myDIV");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
+  var x = document.getElementById("myDIV");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   } else {
+     x.style.display = "none";
+   }
 }
 
-*/
+
 
 /* Script pour la page Contenu de la commande*/
 
