@@ -247,17 +247,17 @@ height: 600px;
 .button4 {background-color: #e7e7e7; color: black;}
 .button5 {background-color: #555555;}
 
-#button6{
-  background-color: #4CAF50;
+#panier {
+  background-color: #f3f05b;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: haute;
+  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 
