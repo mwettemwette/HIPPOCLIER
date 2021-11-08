@@ -138,31 +138,34 @@ function Retour(){
 
 
 /* Script pour la page Contenu de la commande*/
-
-var PrixPanier =0 , PrixLiv =0 , PrixTotal=0, PrixExp =0;
-x = document.getElementById('PrixPanier');
-x.innerHTML = PrixPanier;
-y = document.getElementById('PrixLiv');
-y.innerHTML = PrixLiv;
-z = document.getElementById('PrixTotal');
-z.innerHTML = PrixTotal;
+var Reduc=0, PrixLiv=0, PrixPanier=0, PrixTotal=0,PrixFinal=0,PrixExp=0;
+if(Reduc!=0){
+  var x = document.getElementById('promotion');
+  x.style.display = 'block';
+};
 
 fetch('Models.json')
 .then(function(response){
     return response.json();})
 .then(function(json){
     let contenu_panier=json["Paniertest"];
-    let PrixPanier=0;
+    var PrixPanier=0, PrixTotal=0,PrixFinal=0;
     if (contenu_panier != null){
       for(const i of contenu_panier){
         PrixPanier = PrixPanier + calculprix(i.nombre,i.prix);}
-      x = document.getElementById('PrixPanier')
-      x.innerHTML = PrixPanier;
-}})
+      PL = document.getElementById('PrixLiv');
+      PL.innerHTML = PrixLiv;
+      PP = document.getElementById('PrixPanier');
+      PP.innerHTML = PrixPanier;
+      PT = document.getElementById('PrixTotal');
+      PT.innerHTML = PrixPanier;
+      PF = document.getElementById('PrixFinal');
+      PF.innerHTML = PrixPanier;}    
+})
 
 function calculDate(date1) {
-  valRen = false;
   PrixExp = 0;
+  PrixPanier = parseFloat(document.getElementById('PrixPanier').innerHTML);
   date2f = new Date();
   date2 = date2f.toISOString().split("T")[0];
   date1 = date1.split("-");
@@ -170,16 +173,15 @@ function calculDate(date1) {
   if(parseInt(date1[0]) <= parseInt(date2[0])){
     if(parseInt(date1[1]) <= parseInt(date2[1])){
       if(Math.abs(parseInt(date2[2]) - parseInt(date1[2])) <= 3){
-        valRen = true;
         PrixExp = 8;}
-  x = document.getElementById('PrixLiv');
-  x.innerHTML = PrixLiv + PrixExp;
+        PL = document.getElementById('PrixLiv');
+        PL.innerHTML = PrixLiv + PrixExp;
+        PT = document.getElementById('PrixTotal')
+        PT.innerHTML = PrixPanier + PrixLiv + PrixExp;
+        PF = document.getElementById('PrixFinal');
+        PF.innerHTML = PrixPanier + PrixLiv + PrixExp - Reduc;
 }}}
 
-function calculPrixLiv(adresse){
-  
-}
-/* Script pour la page Contact */
 
 function calculprix(nbr,prix){
   let result = nbr * prix;
@@ -201,25 +203,9 @@ function initAutocomplete() {
       {types: ['geocode']});
   // When the user selects an address from the dropdown, populate the address
   // fields in the form.
-  autocomplete.addListener('place_changed', fillInAddress());
+  autocomplete.addListener('place_changed');
 }
 
-function fillInAddress() {
-  // Get the place details from the autocomplete object.
-  var place = autocomplete.getPlace();
-  for (var component in componentForm) {
-    document.getElementById(component).value = '';}
-  // Get each component of the address from the place details
-  // and fill the corresponding field on the form.
-  for (var i = 0; i < place.address_components.length; i++) {
-    var addressType = place.address_components[i].types[0];
-    if (componentForm[addressType]) {
-      var val = place.address_components[i][componentForm[addressType]];
-      document.getElementById(addressType).value = val;
-      console.log(addressType)
-    }
-  }
-}
 
 // Bias the autocomplete object to the user's geographical location,
 // as supplied by the browser's 'navigator.geolocation' object.
@@ -228,9 +214,8 @@ function geolocalisation() {
     navigator.geolocation.getCurrentPosition(function(position) {
       var geolocation = {
         lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-      console.log(geolocation)
+        lng: position.coords.longitude}
+        console.log(geolocation);
       var circle = new google.maps.Circle({
         center: geolocation,
         radius: position.coords.accuracy
@@ -239,6 +224,45 @@ function geolocalisation() {
     });
   }
 }
+
+function calculAdresse() {
+  adress = document.getElementById("adresse").value;
+  fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURI(adress)}.json?access_token=pk.eyJ1IjoibXdldHRlbXdldHRlIiwiYSI6ImNrdnBlNnBhajB5dGcydnFobHlsczZleG4ifQ.YIRv80xLOk0tglE0pqo6HQ`)
+    .then(function(response){
+      return response.json();})
+    .then(function(json){
+          coord = json.features[0].center;
+          long=coord[0];
+          lat=coord[1];
+          fetch(`https://api.mapbox.com/directions/v5/mapbox/driving/${encodeURIComponent(long)},${encodeURIComponent(lat)};4.8117584,45.7710399?geometries=geojson&access_token=pk.eyJ1IjoibXdldHRlbXdldHRlIiwiYSI6ImNrdnBlNnBhajB5dGcydnFobHlsczZleG4ifQ.YIRv80xLOk0tglE0pqo6HQ`)
+            .then(function(response2){
+              return response2.json();})
+            .then(function(json2){
+                  distance = json2.routes[0].distance;
+                  calculPrixLiv(distance);
+      });
+  });   
+};
+
+function calculPrixLiv(distance){
+  PrixTotal = parseFloat(document.getElementById('PrixTotal').innerHTML);
+  
+  if(distance>20000){
+    PrixDist = 5 + 0.07 * distance/1000;
+    PrixLiv = Math.round(PrixDist)+PrixLiv;
+  }else{
+    PrixLiv = 0;
+  }
+  PL = document.getElementById('PrixLiv');
+  PL.innerHTML = PrixLiv + PrixExp;
+  PT = document.getElementById('PrixTotal')
+  PT.innerHTML = PrixTotal + PrixLiv + PrixExp;
+  PF = document.getElementById('PrixFinal');
+  PF.innerHTML = PrixTotal + PrixLiv + PrixExp - Reduc;
+}
+
+
+
 
 
 /* Script pour la page Contact */
@@ -271,3 +295,12 @@ function geolocalisation() {
 
 
 
+/*
+const input = document.querySelector('input');
+const texte = document.getElementById('texte');
+
+input.addEventListener('change', updateValue);
+
+function updateValue(e) {
+  texte.textContent = e.target.value;
+}*/

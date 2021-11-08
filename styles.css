@@ -295,6 +295,10 @@ input{
   width: 20px;
 }
 
+#promotion{
+  display: none;
+}
+
 #valider{
     display: flex;
     justify-content: space-evenly;

@@ -56,7 +56,7 @@
                     <input type="text" maxlength="10" id="tel" name="tel" required><br>
                     
                     <label for="adresse">Adresse (n°, rue) :</label>
-                    <input type="text" id="adresse" name="adresse" onfocus="geolocalisation()" onchange="calculPrixLiv(this.value)" class="form-control" required><br>
+                    <input type="text" id="adresse" name="adresse" onfocus="geolocalisation()" onchange="calculAdresse(this.value)" class="form-control" required><br>
 
                     <label for="cp">Code Postal :</label>
                     <input type="text" maxlength="5" id="cp" name="cp"required><br>
@@ -87,6 +87,10 @@
                 <p>Livraison : <span id="PrixLiv"></span> €</p>
 
                 <p>Total : <span id="PrixTotal"></span> €</p> 
+
+                <p id="promotion"> Promotion : -<span id="Reduc"></span> €</p>
+
+                <p>Prix à payer : <span id="PrixFinal"></span> €</p> 
                 
                 <button type="button" onclick="calculPrixPanier()">Payer</button>
                 <br> <a href="https://bit.ly/2VYkGPX">Régler votre commande</a>
