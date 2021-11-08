@@ -5,21 +5,17 @@ fetch('Models.json')
 })
 .then(function(json){
   let contenu_models=json["models"];
-  console.log(contenu_models[1]["id"])
   var k = 0;
   let idd = new URLSearchParams(window.location.search).get('id') ;
   console.log(idd)
-  for(var i in contenu_models.length){
-    console.log(i)
-    while(contenu_models[i]["id"] != idd ){
-      i =i+1;}}
-    k=i;
-    console.log(k)
-
-  let dimtel = contenu_models[k].dimtel.split(',');
-  console.log(dimtel)
-  let dimtrou = contenu_models[k].dimtrou.split(',');
-  var test = document.getElementById('test');
+  for(const p of contenu_models){
+    if(p["id"] == idd ){
+      console.log(p)
+      let dimtel = p.dimtel.split(',');
+      console.log(dimtel)
+      let dimtrou = p.dimtrou.split(',');
+      console.log(dimtrou)
+        var test = document.getElementById('test');
         var context = test.getContext('2d');
 
         context.beginPath();
@@ -45,7 +41,7 @@ fetch('Models.json')
         context.lineTo(150,125);
         context.fill();
         context.stroke();
-})
+}}})
 
 /*
 function Monter() { //ok
