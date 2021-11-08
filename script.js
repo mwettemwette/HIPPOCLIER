@@ -243,8 +243,8 @@ function geolocalisation() {
 
 /* Script pour la page Contact */
 
-/*
-function toggleElement(bouton) {
+
+/*function toggleElement(bouton) {
   document.querySelectorAll("[data-num]").forEach(function(el) {
     el.style.display = 'none'
   })
@@ -252,15 +252,15 @@ function toggleElement(bouton) {
   let div = document.querySelector("[data-num='" + bouton.dataset.numbtn + "']")
   div.style.display = 'block'
 
-  // var x = document.getElementById("myDIV");
-  // if (x.style.display === "none") {
-  //   x.style.display = "block";
-  // } else {
-  //   x.style.display = "none";
-  // }
+  var x = document.getElementById("myDIV");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   } else {
+     x.style.display = "none";
+   }
 }
 
-*/
+
 
 /* Script pour la page Contenu de la commande*/
 

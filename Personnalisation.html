@@ -6,31 +6,62 @@
         <link rel="stylesheet" href="styles.css" >
         <script src='template.js' defer></script>
     </head>
-
+<main>
 <body>
       
     <header id="header"></header>
 
-    <main>
+    <h1 id=perso>Personnalise ta coque</h1>
 
     <div class="perso1">
-       <div class="canva"></div>
-            <canvas id="apple" width="512" height="512" 
+       <div class="canva">
+            <canvas id="apple" width="600" height="600  " 
             style="background: url(url) no-repeat center center; 
             border:10px solid #000000;">
-            </canvas
+            </canvas>
+            </div>
  
 
-        <div class="choix2"></div>
-            <fieldset style="width: 40%", id="choix2">
-            <legend>Personnalise ta coque</legend>
+        <div class="choix2">
+            <fieldset id="choix2">
+            <legend id="persocoque">Personnalise ta coque de {{name}}</legend>
         <p>Inscriptions au centre de la coque</p>
         <input placeholder="text" name="name"/>
         <p id="log"></p>
+
+        <p>Couleur</p>
+
+            <button class="button"></button>
+            <button class="button button2"></button>
+            <button class="button button3"></button>
+            <button class="button button4"></button>
+            <button class="button button5"></button>
+
+            <p>Niveau de solidité</p>
+
+<div>
+  <input type="radio" id="maximale" name="solidité" value="maximale"
+         checked>
+  <label for="maximale">Maximale: acier trempé</label>
+</div>
+
+<div>
+  <input type="radio" id="élevé" name="solidité" value="élevéy">
+  <label for="élevé">Elevé: Inox </label>
+</div>
+
+<div>
+  <input type="radio" id="basique" name="solidité" value="basique">
+  <label for="basique">Basique: plastique solidifié</label>
+</div>
+        
             </fieldset>
-        </section>
+        </div>>
     </div>
 </main>
+
+
+
 </body>
     
 </html>

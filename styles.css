@@ -209,25 +209,55 @@ footer{
 /*Style pour la page Personnalisation uniquement*/
 .perso1 {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 10px;
+  grid-template: 150px / auto auto auto;
 }
 
 #canva {
-grid-column: 1/2;
+width : 90%;
+height: 600px;
 }
 
 #choix2 {
-grid-column: 2/2;  
+width: 90%;
+height: 600px; 
 }
 
-/*#choix2{
- float:right;
- margin-right: 15%;
+#perso{
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 
-#canva{
-  margin-left: 10%;
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} 
+.button3 {background-color: #f44336;} 
+.button4 {background-color: #e7e7e7; color: black;}
+.button5 {background-color: #555555;}
+
+#button6{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: haute;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; 
 }
 
 
