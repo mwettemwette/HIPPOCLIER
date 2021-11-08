@@ -1,26 +1,53 @@
-fetch("header.html") //ok
-.then(contenu => contenu.text())
-.then(texte => {
-    document.getElementById("header").innerHTML = texte;
+let contenu_models={};
+fetch('Models.json')
+.then(function(response){
+  return response.json();
+})
+.then(function(json){
+  let contenu_models=json["models"];
+  console.log(contenu_models[1]["id"])
+  var k = 0;
+  let idd = new URLSearchParams(window.location.search).get('id') ;
+  console.log(idd)
+  for(var i in contenu_models.length){
+    console.log(i)
+    while(contenu_models[i]["id"] != idd ){
+      i =i+1;}}
+    k=i;
+    console.log(k)
+
+  let dimtel = contenu_models[k].dimtel.split(',');
+  console.log(dimtel)
+  let dimtrou = contenu_models[k].dimtrou.split(',');
+  var test = document.getElementById('test');
+        var context = test.getContext('2d');
+
+        context.beginPath();
+        context.fillStyle = "black";
+        context.lineTo(600,0);
+        context.lineTo(600,600);
+        context.lineTo(0,600);
+        context.lineTo(0,0);
+        context.fill();
+        context.stroke();
+
+        context.clearRect(dimtel[0],dimtel[1],dimtel[2],dimtel[3]);
+
+        context.beginPath();
+        context.fillStyle ="black";
+        context.arc(dimtrou[0],dimtrou[1],25,Math.PI,1.5 * Math.PI);
+        context.lineTo(225,100);
+        context.arc(dimtrou[2],dimtrou[1],25,1.5 * Math.PI,0);
+        context.lineTo(275,175);
+        context.arc(dimtrou[2],dimtrou[3],25,0,0.5*Math.PI);
+        context.lineTo(200,225);
+        context.arc(dimtrou[0],dimtrou[3],25,0.5*Math.PI, Math.PI);
+        context.lineTo(150,125);
+        context.fill();
+        context.stroke();
 })
 
-fetch("footer.html") //ok
-.then(contenu => contenu.text())
-.then(texte => {
-    document.getElementById("footer").innerHTML = texte;
-})
-
-var mybutton = document.getElementById("fleche");  //ok 
-window.onscroll = function() {popfleche()};
-
-function popfleche() { //ok
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
+/*
 function Monter() { //ok
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
@@ -82,7 +109,7 @@ fetch('Models.json')
         clone.firstElementChild.innerHTML = newContent
         console.log(clone)
         document.getElementById('Detail').appendChild(clone);}
-})
+})*/
 
 
 /* bandeau défilant *//*
@@ -130,7 +157,7 @@ function showSlides(n) {
 
 /* Script pour la page Personnalisation */
 
-
+/*
 const input = document.querySelector('input');
 const log = document.getElementById('log');
 
@@ -138,4 +165,4 @@ input.addEventListener('change', updateValue);
 
 function updateValue(e) {
   log.textContent = e.target.value;
-}
+}*/

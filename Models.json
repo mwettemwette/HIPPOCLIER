@@ -28,7 +28,9 @@
             "prix": 0,
             "id" : 0,
             "image" : "Retour",
-            "lien" : "javascript:Retour()"
+            "lien" : "javascript:Retour()",
+            "dimtel": "0",
+            "dimtrou" : "175,125,250,200"  
         },
         {
             "name" : "Amodel1",
@@ -36,7 +38,9 @@
             "marque" : "Apple",
             "id" : 1001,
             "image" : "amodel1",
-            "lien" : "personnalisation.html?id=1001"
+            "lien" : "personnalisation.html?id=1001",
+            "dimtel" : "100,50,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Amodel2",
@@ -44,7 +48,10 @@
             "marque" : "Apple",
             "id" : 1002,
             "image" : "amodel2",
-            "lien" : "personnalisation.html?id=1002"
+            "lien" : "personnalisation.html?id=1002",
+            "dimtel" : "100,50,400,550",
+            "dimtrou" : "175,125,250,200"
+
         },
         {
             "name" : "Amodel3",
@@ -52,7 +59,9 @@
             "marque" : "Apple",
             "id" : 1003,
             "image" : "amodel3",
-            "lien" : "personnalisation.html?id=1003"
+            "lien" : "personnalisation.html?id=1003",
+            "dimtel" : "100,50,350,550",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Amodel4",
@@ -60,7 +69,9 @@
             "marque" : "Apple",
             "id" : 1004,
             "image" : "amodel4",
-            "lien" : "personnalisation.html?id=1004"
+            "lien" : "personnalisation.html?id=1004",
+            "dimtel" : "100,50,450,555",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Amodel5",
@@ -68,7 +79,9 @@
             "marque" : "Apple",
             "id" : 1005,
             "image" : "amodel5",
-            "lien" : "personnalisation.html?id=1005"
+            "lien" : "personnalisation.html?id=1005",
+            "dimtel" : "100,50,325,525",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Hmodel1",
@@ -76,7 +89,9 @@
             "marque" : "Huawei",
             "id" : 2001,
             "image" : "hmodel1",
-            "lien" : "personnalisation.html?id=2001"
+            "lien" : "personnalisation.html?id=2001",
+            "dimtel" : "75,55,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Hmodel2",
@@ -84,7 +99,9 @@
             "marque" : "Huawei",
             "id" : 2002,
             "image" : "hmodel2",
-            "lien" : "personnalisation.html?id=2002"
+            "lien" : "personnalisation.html?id=2002",
+            "dimtel" : "100,55,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Hmodel3",
@@ -92,7 +109,9 @@
             "marque" : "Huawei",
             "id" : 2003,
             "image" : "hmodel3",
-            "lien" : "personnalisation.html?id=2003"
+            "lien" : "personnalisation.html?id=2003",
+            "dimtel" : "90,55,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Hmodel4",
@@ -100,7 +119,9 @@
             "marque" : "Huawei",
             "id" : 2004,
             "image" : "hmodel4",
-            "lien" : "personnalisation.html?id=2004"
+            "lien" : "personnalisation.html?id=2004",
+            "dimtel" : "80,50,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Hmodel5",
@@ -108,7 +129,9 @@
             "marque" : "Huawei",
             "id" : 2005,
             "image" : "hmodel5",
-            "lien" : "personnalisation.html?id=2005"
+            "lien" : "personnalisation.html?id=2005",
+            "dimtel" : "85,50,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Smodel1",
@@ -116,7 +139,9 @@
             "marque" : "Samsung",
             "id" : 3001,
             "image" : "smodel1",
-            "lien" : "personnalisation.html?id=3001"
+            "lien" : "personnalisation.html?id=3001",
+            "dimtel" : "100,50,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Smodel2",
@@ -124,7 +149,9 @@
             "marque" : "Samsung",
             "id" : 3002,
             "image" : "smodel2",
-            "lien" : "personnalisation.html?id=3002"
+            "lien" : "personnalisation.html?id=3002",
+            "dimtel" : "100,50,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Smodel3",
@@ -132,7 +159,9 @@
             "marque" : "Samsung",
             "id" : 3003,
             "image" : "smodel3",
-            "lien" : "personnalisation.html?id=3003"
+            "lien" : "personnalisation.html?id=3003",
+            "dimtel" : "100,50,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Smodel4",
@@ -140,7 +169,9 @@
             "marque" : "Samsung",
             "id" : 3004,
             "image" : "smodel4",
-            "lien" : "personnalisation.html?id=3004"
+            "lien" : "personnalisation.html?id=3004",
+            "dimtel" : "100,50,350,500",
+            "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Smodel5",
@@ -148,7 +179,9 @@
             "marque" : "Samsung",
             "id" : 3005,
             "image" : "smodel5",
-            "lien" : "personnalisation.html?id=3005"
+            "lien" : "personnalisation.html?id=3005",
+            "dimtel" : "100,50,350,500",
+            "dimtrou" : "175,125,250,200"
         }
     ],
     "Code Promo" : [
