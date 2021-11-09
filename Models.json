@@ -43,7 +43,7 @@
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Poirephone Max",
+            "name" : "PoirephoneMax",
             "prix" : 35,
             "marque" : "Poire",
             "id" : 1002,
@@ -64,7 +64,7 @@
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Poirephone Lite",
+            "name" : "PoirephoneLite",
             "prix" : 40,
             "marque" : "Poire",
             "id" : 1004,
@@ -74,7 +74,7 @@
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Poirephone Pro",
+            "name" : "PoirephonePro",
             "prix" : 50,
             "marque" : "Poire",
             "id" : 1005,
@@ -84,7 +84,7 @@
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Wave Star",
+            "name" : "WaveStar",
             "prix" : 25,
             "marque" : "Wave",
             "id" : 2001,
@@ -94,7 +94,7 @@
             "dimtrou" : "150,125,175,200"
         },
         {
-            "name" : "Wave Star Max",
+            "name" : "WaveStarMax",
             "prix" : 25,
             "marque" : "Wave",
             "id" : 2002,
@@ -104,7 +104,7 @@
             "dimtrou" : "200,125,200,200"
         },
         {
-            "name" : "Wave Star Pro",
+            "name" : "WaveStarPro",
             "prix" : 35,
             "marque" : "Wave",
             "id" : 2003,
@@ -114,7 +114,7 @@
             "dimtrou" : "175,125,200,200"
         },
         {
-            "name" : "Wave Star Giga",
+            "name" : "WaveStarGiga",
             "prix" : 30,
             "marque" : "Wave",
             "id" : 2004,
@@ -124,7 +124,7 @@
             "dimtrou" : "175,125,200,225"
         },
         {
-            "name" : "Wave Star Nova",
+            "name" : "WaveStarNova",
             "prix" : 40,
             "marque" : "Wave",
             "id" : 2005,
@@ -206,7 +206,7 @@
             "pourcentage" : 0
         }
     ],
-    "Paniertest" : [
+    "Panier" : [
         {
             "name" : "EclaT5",
             "prix" : 20,

@@ -5,12 +5,18 @@ fetch("header.html") //ok
 .then(texte => {
     document.getElementById("header").innerHTML = texte;
 })
-/*
+
 fetch("footer.html") //ok
 .then(contenu => contenu.text())
 .then(texte => {
     document.getElementById("footer").innerHTML = texte;
-})*/
+})
+
+fetch("fleche.html") //ok
+.then(contenu => contenu.text())
+.then(texte => {
+    document.getElementById("fleche").innerHTML = texte;
+})
 
 var mybutton = document.getElementById("fleche");  //ok 
 window.onscroll = function() {popfleche()};
@@ -81,7 +87,7 @@ fetch('Models.json')
     let contenu_marques=json["marques"];
     let contenu_models=json["models"];
     let contenu_promo=json["Code Promo"];
-    let contenu_panier=json["Paniertest"];
+    let contenu_panier=json["Panier"];
 
     let template1 = document.querySelector("#marques");
     if (template1 != null){
@@ -391,9 +397,11 @@ function ajoutPanier(){
   var name = document.getElementById('name').innerHTML;
   var prix = parseFloat(document.getElementById('PrixArticle').innerHTML);
   var solid = document.getElementById('solid').value;
-  var image = document.getElementById('image');
+  var image = document.getElementById('name').innerHTML;
   var couleur = document.getElementById('canvas').style.backgroundColor;
   var nombre = document.getElementById('nombre').value; 
-  var article = [name , prix, solid, image, couleur, nombre];
-  console.log(article)
+  var article = { name , prix  , solid, image, couleur, nombre};
+  const json = JSON.stringify(article);
+  console.log("Models.json['Panier']>>:" , json);
+
 }
