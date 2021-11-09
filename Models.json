@@ -2,22 +2,22 @@
 {
     "marques" :[
         {
-            "name" : "Apple",
+            "name" : "Poire",
             "id" : 1,
-            "image" : "Apple",
+            "image" : "Poire",
             "prix" : 30
         },
         
         {
-            "name" : "Huawei",
+            "name" : "Wave",
             "id" : 2,
-            "image" : "Huawei",
+            "image" : "Wave",
             "prix" : 25
         },
         {
-            "name" : "Samsung",
+            "name" : "Bigo",
             "id" : 3,
-            "image" : "Samsung",
+            "image" : "Bigo",
             "prix" : 20
         }
     ],
@@ -30,155 +30,155 @@
             "image" : "Retour",
             "lien" : "javascript:Retour()",
             "dimtel": "0",
-            "dimtrou" : "175,125,250,200"  
+            "dimtrou" : "0"  
         },
         {
-            "name" : "Amodel1",
+            "name" : "Poirephone",
             "prix" : 30,
-            "marque" : "Apple",
+            "marque" : "Poire",
             "id" : 1001,
-            "image" : "amodel1",
+            "image" : "Poirephone",
             "lien" : "personnalisation.html?id=1001",
             "dimtel" : "100,50,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Amodel2",
+            "name" : "Poirephone Max",
             "prix" : 30,
-            "marque" : "Apple",
+            "marque" : "Poire",
             "id" : 1002,
-            "image" : "amodel2",
+            "image" : "PoirephoneMax",
             "lien" : "personnalisation.html?id=1002",
             "dimtel" : "100,50,400,550",
             "dimtrou" : "175,125,250,200"
 
         },
         {
-            "name" : "Amodel3",
+            "name" : "PoirephoneY",
             "prix" : 30,
-            "marque" : "Apple",
+            "marque" : "Poire",
             "id" : 1003,
-            "image" : "amodel3",
+            "image" : "PoirephoneY",
             "lien" : "personnalisation.html?id=1003",
             "dimtel" : "100,50,350,550",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Amodel4",
+            "name" : "Poirephone Lite",
             "prix" : 30,
-            "marque" : "Apple",
+            "marque" : "Poire",
             "id" : 1004,
-            "image" : "amodel4",
+            "image" : "PoirephoneLite",
             "lien" : "personnalisation.html?id=1004",
             "dimtel" : "100,50,450,555",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Amodel5",
+            "name" : "Poirephone Pro",
             "prix" : 30,
-            "marque" : "Apple",
+            "marque" : "Poire",
             "id" : 1005,
-            "image" : "amodel5",
+            "image" : "PoirephoneProx",
             "lien" : "personnalisation.html?id=1005",
             "dimtel" : "100,50,325,525",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Hmodel1",
+            "name" : "Wave Star",
             "prix" : 25,
-            "marque" : "Huawei",
+            "marque" : "Wave",
             "id" : 2001,
-            "image" : "hmodel1",
+            "image" : "WaveStar",
             "lien" : "personnalisation.html?id=2001",
             "dimtel" : "75,55,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Hmodel2",
+            "name" : "Wave Star Max",
             "prix" : 25,
-            "marque" : "Huawei",
+            "marque" : "Wave",
             "id" : 2002,
-            "image" : "hmodel2",
+            "image" : "WaveStarMax",
             "lien" : "personnalisation.html?id=2002",
             "dimtel" : "100,55,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Hmodel3",
+            "name" : "Wave Star Pro",
             "prix" : 25,
-            "marque" : "Huawei",
+            "marque" : "Wave",
             "id" : 2003,
-            "image" : "hmodel3",
+            "image" : "WaveStarPro",
             "lien" : "personnalisation.html?id=2003",
             "dimtel" : "90,55,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Hmodel4",
+            "name" : "Wave Star Giga",
             "prix" : 25,
-            "marque" : "Huawei",
+            "marque" : "Wave",
             "id" : 2004,
-            "image" : "hmodel4",
+            "image" : "WaveStarGiga",
             "lien" : "personnalisation.html?id=2004",
             "dimtel" : "80,50,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Hmodel5",
+            "name" : "Wave Star Nova",
             "prix" : 25,
-            "marque" : "Huawei",
+            "marque" : "Wave",
             "id" : 2005,
-            "image" : "hmodel5",
+            "image" : "WaveStarNova",
             "lien" : "personnalisation.html?id=2005",
             "dimtel" : "85,50,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Smodel1",
+            "name" : "EclaT",
             "prix" : 20,
-            "marque" : "Samsung",
+            "marque" : "Bigo",
             "id" : 3001,
-            "image" : "smodel1",
+            "image" : "EclaT1",
             "lien" : "personnalisation.html?id=3001",
             "dimtel" : "100,50,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Smodel2",
+            "name" : "OOF",
             "prix" : 20,
-            "marque" : "Samsung",
+            "marque" : "Bigo",
             "id" : 3002,
-            "image" : "smodel2",
+            "image" : "OOF",
             "lien" : "personnalisation.html?id=3002",
             "dimtel" : "100,50,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Smodel3",
+            "name" : "Eclatax",
             "prix" : 20,
-            "marque" : "Samsung",
+            "marque" : "Bigo",
             "id" : 3003,
-            "image" : "smodel3",
+            "image" : "Eclatax",
             "lien" : "personnalisation.html?id=3003",
             "dimtel" : "100,50,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Smodel4",
+            "name" : "EclaTosol",
             "prix" : 20,
-            "marque" : "Samsung",
+            "marque" : "Bigo",
             "id" : 3004,
-            "image" : "smodel4",
+            "image" : "EclaTosol",
             "lien" : "personnalisation.html?id=3004",
             "dimtel" : "100,50,350,500",
             "dimtrou" : "175,125,250,200"
         },
         {
-            "name" : "Smodel5",
+            "name" : "Toupouri",
             "prix" : 20,
-            "marque" : "Samsung",
+            "marque" : "Bigo",
             "id" : 3005,
-            "image" : "smodel5",
+            "image" : "Toupouri",
             "lien" : "personnalisation.html?id=3005",
             "dimtel" : "100,50,350,500",
             "dimtrou" : "175,125,250,200"
@@ -208,30 +208,30 @@
     ],
     "Paniertest" : [
         {
-            "name" : "Smodel5",
+            "name" : "EclaT5",
             "prix" : 20,
-            "marque" : "Samsung",
+            "solid" : "Bigo",
             "id" : 3005,
-            "image" : "smodel5",
-            "lien" : "personnalisation.html?id=3005",
+            "image" : "EclaT5",
+            "couleur" : "green",
             "nombre" : 4
         },
         {
-            "name" : "Hmodel5",
+            "name" : "Wave Star5",
             "prix" : 25,
-            "marque" : "Huawei",
+            "solid" : "Wave",
             "id" : 2005,
-            "image" : "hmodel5",
-            "lien" : "personnalisation.html?id=2005",
+            "image" : "Wave Star5",
+            "couleur" : "grey",
             "nombre" : 1
         },
         {
-            "name" : "Amodel1",
+            "name" : "Poirephone1",
             "prix" : 30,
-            "marque" : "Apple",
+            "solid" : "Poire",
             "id" : 1001,
-            "image" : "amodel1",
-            "lien" : "personnalisation.html?id=1001",
+            "image" : "Poirephone1",
+            "couleur" : "blue",
             "nombre" : 4
         }
     ]

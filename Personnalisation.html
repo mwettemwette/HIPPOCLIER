@@ -15,62 +15,54 @@
 
     <div class="perso1">
        <div class="canva">
-            <canvas id="canvas" width="600" height="600  " 
-            style="background: url(url) no-repeat center center; 
-            border:10px solid #000000;">
+            <canvas id="canvas" width="650" height="700  " 
+            >
             </canvas>
-            </div>
+        </div>
  
 
         <div class="choix2">
             <fieldset id="choix2">
-            <legend id="persocoque">Personnalise ta coque de {{name}}</legend>
-        <p>Inscriptions au centre de la coque</p>
-        <input placeholder="text" id="TextePerso"/>
-        <p id="log"></p>
+                <div id="nomimage">
+                    <div>
+                    <legend>Personnalise ta coque de ton <span id="name"></span></legend>
+                    <p>Inscriptions au centre de la coque</p>
+                    <input placeholder="text" id="TextePerso"/>
+                    <p id="log"></p>
+                    </div>
+                    <div>
+                        <span id="image"><img src="{{image}}.png"></span>
+                    </div>
+                    </div>
 
-        <p>Couleur</p>
+            <p>Couleur</p>
 
-            <button class="button" id="vert" ></button>
-            <button class="button button2" id="bleu" ></button>
-            <button class="button button3" id="rouge" ></button>
-            <button class="button button4" id="gris" ></button>
-            <button class="button button5" id="noir" ></button>
+            <button onclick="change('green')" class="button" id="vert"></button>
+            <button onclick="change('blue')" class="button" id="bleu" ></button>
+            <button onclick="change('red')" class="button" id="rouge" ></button>
+            <button onclick="change('yellow')" class="button" id="jaune"></button>
+            <button onclick="change('grey')" class="button" id="gris" ></button>
 
-    <p>Niveau de solidité</p>
-            <select name="solidité" id='solid'onchange="prixItem()">
-                <option value="maximale">Maximale: acier trempé</option>
-                <option value="élevé"> Elevé: Inox</option>
-                <option value="basique">Basique: plastique solidifié</option>  
-            </select>
-<!-- <div>
-  <input type="radio" id="maximale" name="solidité" value="maximale" checked>
-  <label for="maximale">Maximale: acier trempé</label>
-</div>
+            <p>Niveau de solidité</p>
+                <select name="solidité" id='solid'onchange="prixItem()">
+                    <option value="basique">Basique: plastique solidifié</option>  
+                    <option value="élevé"> Elevé: Inox</option>
+                    <option value="maximale">Maximale: acier trempé</option>
+                </select>
 
-<div>
-  <input type="radio" id="élevé" name="solidité" value="élevé">
-  <label for="élevé">Elevé: Inox </label>
-</div>
 
-<div>
-  <input type="radio" id="basique" name="solidité" value="basique">
-  <label for="basique">Basique: plastique solidifié</label>
-</div> -->
+            <br><br><label>Nombre d'articles similaire désiré</label>
+            <input id= "nombre" type="number" value= 1 min=1 onchange="prixItem()">
 
-<br><br><label>Nombre d'articles similaire désiré</label>
-<input id= "qte" type="number" value= 1 min=1 onchange="prixItem()">
+            <br><br><p>Prix:<span id="PrixArticle"></span>€</p>
+            <button class="Panier" onclick="ajoutPanier()">
 
-<br><br><p>Prix:<span id="PrixArticle"></span>€</p>
-<button class="Panier"><a href="Contenu.html">Ajouter au panier</a></button>
+            </button>
         
             </fieldset>
-        </div>>
+        </div>
     </div>
-
-
-
-
+    
 </body>
     
 </html>

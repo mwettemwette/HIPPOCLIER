@@ -21,8 +21,8 @@
         
         <template id="marques">
             <div>
-                    <img src="/images/{{image}}.jpg" onclick="javascript:waw('{{name}}')" id="{{id}}" alt="{{name}}" width=620vw height=620vh>
-                    <p class="prix">A partir de {{prix}} €</p>
+                    <img src="/images/{{image}}.png" onclick="javascript:waw('{{name}}')" id="{{id}}" alt="{{name}}" width=620vw height=620vh>
+                    <p class="prix">{{name}} à partir de {{prix}} €</p>
             </div>
         </template>
 
@@ -30,7 +30,8 @@
             <div>
             <div class="{{marque}}">
                 <a href="{{lien}}">
-                    <img src="/images/{{image}}.jpg" id="{{id}}" alt="{{name}}">
+                    <img src="/images/{{image}}.png" id="{{id}}" alt="{{name}}">
+                    <p>{{name}} à partir de {{prix}}€</p>
                 </a>
             </div>
             </div>

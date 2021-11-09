@@ -212,10 +212,6 @@ footer{
   grid-template: 150px / auto auto auto;
 }
 
-#canva {
-width : 90%;
-height: 600px;
-}
 
 #choix2 {
 width: 90%;
@@ -229,8 +225,12 @@ height: 600px;
   width: fit-content;
 }
 
+#nomimage{
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
 .button {
-  background-color: #4CAF50;
+
   border: none;
   color: white;
   padding: 15px 32px;
@@ -242,10 +242,11 @@ height: 600px;
   cursor: pointer;
 }
 
-.button2 {background-color: #008CBA;} 
-.button3 {background-color: #f44336;} 
-.button4 {background-color: #e7e7e7; color: black;}
-.button5 {background-color: #555555;}
+#bleu {background-color: blue;}
+#vert {background-color: green;} 
+#rouge {background-color: #f44336;} 
+#jaune {background-color: yellow; }
+#gris {background-color: grey;}
 
 #panier {
   background-color: #f3f05b;

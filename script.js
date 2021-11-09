@@ -5,12 +5,12 @@ fetch("header.html") //ok
 .then(texte => {
     document.getElementById("header").innerHTML = texte;
 })
-
+/*
 fetch("footer.html") //ok
 .then(contenu => contenu.text())
 .then(texte => {
     document.getElementById("footer").innerHTML = texte;
-})
+})*/
 
 var mybutton = document.getElementById("fleche");  //ok 
 window.onscroll = function() {popfleche()};
@@ -25,7 +25,7 @@ function popfleche() { //ok
 
 function prixItem(){
   let id_item = new URLSearchParams(window.location.search).get("id")
-  let quantité = document.getElementById("qte").value;
+  let quantité = document.getElementById("nombre").value;
   var code= id_item.charAt(0);
   let solidité = document.getElementById("solid").value;
   if (solidité == "maximale") {
@@ -106,6 +106,7 @@ fetch('Models.json')
         .replace(/{{lien}}/g, i.lien)
         .replace(/{{id}}/g, i.id)
         .replace(/{{name}}/g, i.name)
+        .replace(/{{prix}}/g,i.prix)
       clone.firstElementChild.innerHTML = newContent
       document.getElementById('grillemodels').appendChild(clone);}}
 
@@ -188,7 +189,7 @@ fetch('Models.json')
     return response.json();})
 .then(function(json){
     let contenu_panier=json["Paniertest"];
-    var PrixPanier=0, PrixTotal=0,PrixFinal=0;
+    var PrixPanier=0, PrixTotal=0,PrixFinal=0, PrixLiv=0;
     if (contenu_panier != null){
       for(const i of contenu_panier){
         PrixPanier = PrixPanier + calculprix(i.nombre,i.prix);}
@@ -342,24 +343,25 @@ fetch('Models.json')
 })
 .then(function(json){
   let contenu_models=json["models"];
-  var k = 0;
   let idd = new URLSearchParams(window.location.search).get('id') ;
-  console.log(idd)
   for(const p of contenu_models){
     if(p["id"] == idd ){
-      console.log(p)
+      let nom = document.getElementById('name');
+      nom.innerHTML = p["name"];
+      let image = document.getElementById('image');
+      newContent = image.innerHTML
+        .replace(/{{image}}/g, p['image'])
+      image.innerHTML = newContent
       let dimtel = p.dimtel.split(',');
-      console.log(dimtel)
       let dimtrou = p.dimtrou.split(',');
-      console.log(dimtrou)
-        var test = document.getElementById('canvas');
-        var context = test.getContext('2d');
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
 
         context.beginPath();
         context.fillStyle = "black";
-        context.lineTo(600,0);
-        context.lineTo(600,600);
-        context.lineTo(0,600);
+        context.lineTo(650,0);
+        context.lineTo(650,700);
+        context.lineTo(0,700);
         context.lineTo(0,0);
         context.fill();
         context.stroke();
@@ -377,9 +379,21 @@ fetch('Models.json')
         context.arc(dimtrou[0],dimtrou[3],25,0.5*Math.PI, Math.PI);
         context.lineTo(150,125);
         context.fill();
-        context.stroke();
-}}})
+        context.stroke();}}})
 
+function change(color){
+  var canvas = document.getElementById('canvas');
+  canvas.style.backgroundColor = color;
 
+}
 
-
+function ajoutPanier(){
+  var name = document.getElementById('name').innerHTML;
+  var prix = parseFloat(document.getElementById('PrixArticle').innerHTML);
+  var solid = document.getElementById('solid').value;
+  var image = document.getElementById('image');
+  var couleur = document.getElementById('canvas').style.backgroundColor;
+  var nombre = document.getElementById('nombre').value; 
+  var article = [name , prix, solid, image, couleur, nombre];
+  console.log(article)
+}
