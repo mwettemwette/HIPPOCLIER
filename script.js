@@ -371,13 +371,13 @@ fetch('Models.json')
         context.beginPath();
         context.fillStyle ="black";
         context.arc(dimtrou[0],dimtrou[1],25,Math.PI,1.5 * Math.PI);
-        context.lineTo(225,100);
+        context.lineTo(dimtrou[2],parseFloat(dimtrou[1])-25);
         context.arc(dimtrou[2],dimtrou[1],25,1.5 * Math.PI,0);
-        context.lineTo(275,175);
+        context.lineTo(parseFloat(dimtrou[2])+25,dimtrou[3]);
         context.arc(dimtrou[2],dimtrou[3],25,0,0.5*Math.PI);
-        context.lineTo(200,225);
+        context.lineTo(dimtrou[0],parseFloat(dimtrou[3])+25);
         context.arc(dimtrou[0],dimtrou[3],25,0.5*Math.PI, Math.PI);
-        context.lineTo(150,125);
+        context.lineTo(parseFloat(dimtrou[0])-25,dimtrou[1]);
         context.fill();
         context.stroke();}}})
 

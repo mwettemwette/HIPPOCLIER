@@ -18,7 +18,7 @@
             "name" : "Bigo",
             "id" : 3,
             "image" : "Bigo",
-            "prix" : 20
+            "prix" : 2
         }
     ],
     "models" :[
@@ -44,7 +44,7 @@
         },
         {
             "name" : "Poirephone Max",
-            "prix" : 30,
+            "prix" : 35,
             "marque" : "Poire",
             "id" : 1002,
             "image" : "PoirephoneMax",
@@ -55,17 +55,17 @@
         },
         {
             "name" : "PoirephoneY",
-            "prix" : 30,
+            "prix" : 33,
             "marque" : "Poire",
             "id" : 1003,
             "image" : "PoirephoneY",
             "lien" : "personnalisation.html?id=1003",
-            "dimtel" : "100,50,350,550",
+            "dimtel" : "100,50,300,550",
             "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Poirephone Lite",
-            "prix" : 30,
+            "prix" : 40,
             "marque" : "Poire",
             "id" : 1004,
             "image" : "PoirephoneLite",
@@ -75,10 +75,10 @@
         },
         {
             "name" : "Poirephone Pro",
-            "prix" : 30,
+            "prix" : 50,
             "marque" : "Poire",
             "id" : 1005,
-            "image" : "PoirephoneProx",
+            "image" : "PoirephonePro",
             "lien" : "personnalisation.html?id=1005",
             "dimtel" : "100,50,325,525",
             "dimtrou" : "175,125,250,200"
@@ -91,7 +91,7 @@
             "image" : "WaveStar",
             "lien" : "personnalisation.html?id=2001",
             "dimtel" : "75,55,350,500",
-            "dimtrou" : "175,125,250,200"
+            "dimtrou" : "150,125,175,200"
         },
         {
             "name" : "Wave Star Max",
@@ -101,67 +101,67 @@
             "image" : "WaveStarMax",
             "lien" : "personnalisation.html?id=2002",
             "dimtel" : "100,55,350,500",
-            "dimtrou" : "175,125,250,200"
+            "dimtrou" : "200,125,200,200"
         },
         {
             "name" : "Wave Star Pro",
-            "prix" : 25,
+            "prix" : 35,
             "marque" : "Wave",
             "id" : 2003,
             "image" : "WaveStarPro",
             "lien" : "personnalisation.html?id=2003",
             "dimtel" : "90,55,350,500",
-            "dimtrou" : "175,125,250,200"
+            "dimtrou" : "175,125,200,200"
         },
         {
             "name" : "Wave Star Giga",
-            "prix" : 25,
+            "prix" : 30,
             "marque" : "Wave",
             "id" : 2004,
             "image" : "WaveStarGiga",
             "lien" : "personnalisation.html?id=2004",
             "dimtel" : "80,50,350,500",
-            "dimtrou" : "175,125,250,200"
+            "dimtrou" : "175,125,200,225"
         },
         {
             "name" : "Wave Star Nova",
-            "prix" : 25,
+            "prix" : 40,
             "marque" : "Wave",
             "id" : 2005,
             "image" : "WaveStarNova",
             "lien" : "personnalisation.html?id=2005",
             "dimtel" : "85,50,350,500",
-            "dimtrou" : "175,125,250,200"
+            "dimtrou" : "175,125,200,250"
         },
         {
             "name" : "EclaT",
-            "prix" : 20,
+            "prix" : 15,
             "marque" : "Bigo",
             "id" : 3001,
-            "image" : "EclaT1",
+            "image" : "EclaT",
             "lien" : "personnalisation.html?id=3001",
-            "dimtel" : "100,50,350,500",
+            "dimtel" : "100,50,225,450",
             "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "OOF",
-            "prix" : 20,
+            "prix" : 10,
             "marque" : "Bigo",
             "id" : 3002,
             "image" : "OOF",
             "lien" : "personnalisation.html?id=3002",
-            "dimtel" : "100,50,350,500",
-            "dimtrou" : "175,125,250,200"
+            "dimtel" : "100,50,250,350",
+            "dimtrou" : "175,125,200,150"
         },
         {
             "name" : "Eclatax",
-            "prix" : 20,
+            "prix" : 5,
             "marque" : "Bigo",
             "id" : 3003,
             "image" : "Eclatax",
             "lien" : "personnalisation.html?id=3003",
-            "dimtel" : "100,50,350,500",
-            "dimtrou" : "175,125,250,200"
+            "dimtel" : "100,50,300,500",
+            "dimtrou" : "175,125,200,150"
         },
         {
             "name" : "EclaTosol",
@@ -170,18 +170,18 @@
             "id" : 3004,
             "image" : "EclaTosol",
             "lien" : "personnalisation.html?id=3004",
-            "dimtel" : "100,50,350,500",
+            "dimtel" : "100,50,200,300",
             "dimtrou" : "175,125,250,200"
         },
         {
             "name" : "Toupouri",
-            "prix" : 20,
+            "prix" : 2,
             "marque" : "Bigo",
             "id" : 3005,
             "image" : "Toupouri",
             "lien" : "personnalisation.html?id=3005",
-            "dimtel" : "100,50,350,500",
-            "dimtrou" : "175,125,250,200"
+            "dimtel" : "50,50,450,450",
+            "dimtrou" : "225,225,275,275"
         }
     ],
     "Code Promo" : [
@@ -226,11 +226,11 @@
             "nombre" : 1
         },
         {
-            "name" : "Poirephone1",
+            "name" : "Poirephone",
             "prix" : 30,
             "solid" : "Poire",
             "id" : 1001,
-            "image" : "Poirephone1",
+            "image" : "Poirephone",
             "couleur" : "blue",
             "nombre" : 4
         }
